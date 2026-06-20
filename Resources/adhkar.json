@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "adhkar": [
+    {
+      "id": "gen-subhanallah",
+      "arabicText": "سُبْحَانَ اللَّهِ",
+      "transliteration": "Subḥān Allāh",
+      "translation": "Glory be to Allah.",
+      "source": "تسبيح — متفق عليه",
+      "repeatCount": 33,
+      "category": "general"
+    },
+    {
+      "id": "gen-alhamdulillah",
+      "arabicText": "الْحَمْدُ لِلَّهِ",
+      "transliteration": "Al-ḥamdu lillāh",
+      "translation": "All praise is due to Allah.",
+      "source": "تحميد — متفق عليه",
+      "repeatCount": 33,
+      "category": "general"
+    },
+    {
+      "id": "gen-allahuakbar",
+      "arabicText": "اللَّهُ أَكْبَرُ",
+      "transliteration": "Allāhu akbar",
+      "translation": "Allah is the Greatest.",
+      "source": "تكبير — متفق عليه",
+      "repeatCount": 34,
+      "category": "general"
+    },
+    {
+      "id": "gen-tahleel",
+      "arabicText": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "transliteration": "Lā ilāha illā Allāh, waḥdahu lā sharīka lah, lahu al-mulku wa lahu al-ḥamd, wa huwa ʿalā kulli shayʾin qadīr",
+      "translation": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He is over all things capable.",
+      "source": "تهليل — متفق عليه",
+      "repeatCount": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-istighfar",
+      "arabicText": "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ",
+      "transliteration": "Astaghfiru Allāha wa atūbu ilayh",
+      "translation": "I seek the forgiveness of Allah and turn to Him in repentance.",
+      "source": "استغفار — صحيح مسلم",
+      "repeatCount": 3,
+      "category": "general"
+    },
+    {
+      "id": "gen-hawqala",
+      "arabicText": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+      "transliteration": "Lā ḥawla wa lā quwwata illā billāh",
+      "translation": "There is no might nor power except with Allah.",
+      "source": "متفق عليه",
+      "repeatCount": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-salawat",
+      "arabicText": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ",
+      "transliteration": "Allāhumma ṣalli wa sallim ʿalā nabiyyinā Muḥammad",
+      "translation": "O Allah, send blessings and peace upon our Prophet Muhammad.",
+      "source": "صلاة على النبي ﷺ — نحو سورة الأحزاب ٥٦",
+      "repeatCount": 10,
+      "category": "general"
+    },
+    {
+      "id": "gen-tasbeeh-hamdihi",
+      "arabicText": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ",
+      "transliteration": "Subḥān Allāhi wa biḥamdih, Subḥān Allāhi al-ʿaẓīm",
+      "translation": "Glory be to Allah and praise Him; glory be to Allah the Most Great.",
+      "source": "متفق عليه",
+      "repeatCount": 1,
+      "category": "general"
+    },
+    {
+      "id": "gen-baqiyat",
+      "arabicText": "سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ",
+      "transliteration": "Subḥān Allāh, wal-ḥamdu lillāh, wa lā ilāha illā Allāh, wallāhu akbar",
+      "translation": "Glory be to Allah, all praise is due to Allah, there is no god but Allah, and Allah is the Greatest.",
+      "source": "الباقيات الصالحات — صحيح مسلم",
+      "repeatCount": 1,
+      "category": "general"
+    },
+    {
+      "id": "morn-ayatul-kursi",
+      "arabicText": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+      "transliteration": "Allāhu lā ilāha illā huwa al-Ḥayyu al-Qayyūm…",
+      "translation": "Allah — there is no deity except Him, the Ever-Living, the Sustainer. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and the earth. (Ayat al-Kursi)",
+      "source": "آية الكرسي — البقرة ٢٥٥",
+      "repeatCount": 1,
+      "category": "morning"
+    },
+    {
+      "id": "morn-asbahna",
+      "arabicText": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+      "transliteration": "Aṣbaḥnā wa aṣbaḥa al-mulku lillāh, wal-ḥamdu lillāh, lā ilāha illā Allāh waḥdahu lā sharīka lah",
+      "translation": "We have entered the morning and the dominion belongs to Allah; all praise is due to Allah; there is no god but Allah alone, with no partner.",
+      "source": "أذكار الصباح — صحيح مسلم",
+      "repeatCount": 1,
+      "category": "morning"
+    },
+    {
+      "id": "morn-sayyidul-istighfar",
+      "arabicText": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+      "transliteration": "Allāhumma anta Rabbī lā ilāha illā ant… faghfir lī fa innahu lā yaghfiru adh-dhunūba illā ant",
+      "translation": "O Allah, You are my Lord; there is no god but You. You created me and I am Your servant… so forgive me, for none forgives sins but You. (Sayyid al-Istighfar)",
+      "source": "سيّد الاستغفار — صحيح البخاري",
+      "repeatCount": 1,
+      "category": "morning"
+    },
+    {
+      "id": "morn-radeetu",
+      "arabicText": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا",
+      "transliteration": "Raḍītu billāhi Rabbā, wa bil-Islāmi dīnā, wa bi-Muḥammadin ﷺ nabiyyā",
+      "translation": "I am pleased with Allah as my Lord, with Islam as my religion, and with Muhammad ﷺ as my Prophet.",
+      "source": "أذكار الصباح والمساء — السنن",
+      "repeatCount": 3,
+      "category": "morning"
+    },
+    {
+      "id": "morn-bismillah-protect",
+      "arabicText": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "transliteration": "Bismillāhi alladhī lā yaḍurru maʿa ismihi shayʾun fī al-arḍi wa lā fī as-samāʾi wa huwa as-Samīʿu al-ʿAlīm",
+      "translation": "In the name of Allah, with whose name nothing on earth or in the heaven can cause harm, and He is the All-Hearing, the All-Knowing.",
+      "source": "أذكار الصباح والمساء — السنن",
+      "repeatCount": 3,
+      "category": "morning"
+    },
+    {
+      "id": "eve-amsayna",
+      "arabicText": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+      "transliteration": "Amsaynā wa amsā al-mulku lillāh, wal-ḥamdu lillāh, lā ilāha illā Allāh waḥdahu lā sharīka lah",
+      "translation": "We have entered the evening and the dominion belongs to Allah; all praise is due to Allah; there is no god but Allah alone, with no partner.",
+      "source": "أذكار المساء — صحيح مسلم",
+      "repeatCount": 1,
+      "category": "evening"
+    },
+    {
+      "id": "eve-audhu-kalimat",
+      "arabicText": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+      "transliteration": "Aʿūdhu bikalimāti Allāhi at-tāmmāti min sharri mā khalaq",
+      "translation": "I seek refuge in the perfect words of Allah from the evil of what He has created.",
+      "source": "أذكار المساء — صحيح مسلم",
+      "repeatCount": 3,
+      "category": "evening"
+    },
+    {
+      "id": "eve-ikhlas-muawwidhatayn",
+      "arabicText": "قُلْ هُوَ اللَّهُ أَحَدٌ … قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ … قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+      "transliteration": "Sūrat al-Ikhlāṣ, al-Falaq, an-Nās",
+      "translation": "Recite Surat al-Ikhlas (112), al-Falaq (113) and an-Nas (114), three times in the morning and evening for protection.",
+      "source": "المعوّذات — السنن (الإخلاص والفلق والناس)",
+      "repeatCount": 3,
+      "category": "evening"
+    },
+    {
+      "id": "eve-tasbeeh-hamdihi-100",
+      "arabicText": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+      "transliteration": "Subḥān Allāhi wa biḥamdih",
+      "translation": "Glory be to Allah and praise Him.",
+      "source": "أذكار الصباح والمساء — متفق عليه",
+      "repeatCount": 100,
+      "category": "evening"
+    },
+    {
+      "id": "after-tasleem-istighfar",
+      "arabicText": "أَسْتَغْفِرُ اللَّهَ (ثلاثًا)، اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+      "transliteration": "Astaghfirullāh (×3). Allāhumma anta as-Salām wa minka as-salām, tabārakta yā Dhā al-Jalāli wal-Ikrām",
+      "translation": "I seek Allah's forgiveness (three times). O Allah, You are Peace and from You comes peace; blessed are You, O Owner of Majesty and Honour.",
+      "source": "أذكار بعد الصلاة — صحيح مسلم",
+      "repeatCount": 1,
+      "category": "afterPrayer"
+    },
+    {
+      "id": "after-tasbeeh-set",
+      "arabicText": "سُبْحَانَ اللَّهِ (٣٣)، الْحَمْدُ لِلَّهِ (٣٣)، اللَّهُ أَكْبَرُ (٣٣)، وَتَمَامُ الْمِائَةِ: لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "transliteration": "Subḥān Allāh (33), Al-ḥamdu lillāh (33), Allāhu akbar (33), then: Lā ilāha illā Allāh waḥdahu lā sharīka lah…",
+      "translation": "Glory be to Allah (33×), praise be to Allah (33×), Allah is the Greatest (33×), and to complete one hundred: there is no god but Allah alone…",
+      "source": "أذكار بعد الصلاة — صحيح مسلم",
+      "repeatCount": 1,
+      "category": "afterPrayer"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Build artifacts
+.build/
+DerivedData/
+build/
+
+# Xcode user state (the generated .xcodeproj itself is kept so the app
+# can be opened/run in Xcode without requiring xcodegen)
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+
+# macOS
+.DS_Store

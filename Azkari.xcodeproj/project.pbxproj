@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4C9980033CDD9DF1AB90CA /* DhikrToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93474D2B337B55CFDBB02A7E /* DhikrToastView.swift */; };
+		2311B2DC768EFC0E156C7644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB33D9A38791EE7EB4470E7 /* AppDelegate.swift */; };
+		3438D2AF5B2900B4A6C4684C /* DhikrPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7A5DBD307C95D6D7775D6 /* DhikrPanelController.swift */; };
+		3C620F5BC8232FCA47D21E81 /* AzkariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA77FEDCE38BEC08DA3ED /* AzkariApp.swift */; };
+		44615B82704DFF578CB8CA04 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB4B04149092E62E7A3A11 /* Scheduler.swift */; };
+		548E791AE0E5C437263EC221 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0EA3EE2F80722A9883E53F /* AboutView.swift */; };
+		5921AC573612C2B2374406E2 /* DhikrSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3DF43A634AA13A3234FD7 /* DhikrSelector.swift */; };
+		6BE26A6B76A3F735FBF49214 /* MenuBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A41722EE18547418FE6B /* MenuBarMenu.swift */; };
+		7A8C069D39F008E3765FBDE4 /* ScreenPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCBD4080C90D81AB0B91783 /* ScreenPositioning.swift */; };
+		817B11DDB48A837E8EF2B55C /* Dhikr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B783BEF1699D4197C1336D /* Dhikr.swift */; };
+		81BA6B8DB87FF1D9818337C4 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F898F29EC7DDD68DFFFA051F /* AppModel.swift */; };
+		8CBE16814A9DB877A85291DB /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670E8697CE8F6421D2B4906 /* GeneralSettingsView.swift */; };
+		952C0FDC71AEBD11B13F035F /* DhikrEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7076C57B0E37EBDCD870D2 /* DhikrEditorView.swift */; };
+		9548CED646C3D0C026D65774 /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213E2C1431EBB47F453BA254 /* AppearanceSettingsView.swift */; };
+		A2BD1E48BA80EDD81B9F4762 /* DhikrStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B400A9CA004F00ED4902C /* DhikrStore.swift */; };
+		A42E9056613B6838A596D3A3 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37D0F517346DC0B6038143 /* SoundPlayer.swift */; };
+		AB58098164E6B26972CC5F16 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FA420B818CFB95092F64 /* LoginItem.swift */; };
+		BABB2874EED69D90DFAA3EBD /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9985C3F252897D9C9F11B4 /* Preferences.swift */; };
+		C60D423860238D53D87CD427 /* LibrarySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FAC6DCF12FBF8B90611747 /* LibrarySettingsView.swift */; };
+		DA55BFC7CCCA3D0BB98E23AD /* adhkar.json in Resources */ = {isa = PBXBuildFile; fileRef = A71DBD262C91AC578BFDE754 /* adhkar.json */; };
+		DC0D216F445319BEB083DFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EA5AE83EF949C6FD4EE46D /* Assets.xcassets */; };
+		E0849D342B88BBED559A3205 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4708796C0944AB30CA8FEAA5 /* Enums.swift */; };
+		F077EF1E6A221DF45430D55D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB582AB550F5840EB47F0799 /* SettingsView.swift */; };
+		F1C9239788AE1392E59E0091 /* DhikrPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806DACFADC8AB6954032C12 /* DhikrPanel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11E3DF43A634AA13A3234FD7 /* DhikrSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrSelector.swift; sourceTree = "<group>"; };
+		13F3FA420B818CFB95092F64 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		213E2C1431EBB47F453BA254 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsView.swift; sourceTree = "<group>"; };
+		36B783BEF1699D4197C1336D /* Dhikr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhikr.swift; sourceTree = "<group>"; };
+		3FDB4B04149092E62E7A3A11 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		46EA5AE83EF949C6FD4EE46D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4708796C0944AB30CA8FEAA5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5670E8697CE8F6421D2B4906 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		5A0EA3EE2F80722A9883E53F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		5D9985C3F252897D9C9F11B4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		67D1075100662C9E5C92119E /* Azkari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azkari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D7A5DBD307C95D6D7775D6 /* DhikrPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrPanelController.swift; sourceTree = "<group>"; };
+		7CCBD4080C90D81AB0B91783 /* ScreenPositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPositioning.swift; sourceTree = "<group>"; };
+		93474D2B337B55CFDBB02A7E /* DhikrToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrToastView.swift; sourceTree = "<group>"; };
+		9DB33D9A38791EE7EB4470E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6B8A41722EE18547418FE6B /* MenuBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarMenu.swift; sourceTree = "<group>"; };
+		A71DBD262C91AC578BFDE754 /* adhkar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adhkar.json; sourceTree = "<group>"; };
+		A73B400A9CA004F00ED4902C /* DhikrStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrStore.swift; sourceTree = "<group>"; };
+		A806DACFADC8AB6954032C12 /* DhikrPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrPanel.swift; sourceTree = "<group>"; };
+		CB7076C57B0E37EBDCD870D2 /* DhikrEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrEditorView.swift; sourceTree = "<group>"; };
+		DC37D0F517346DC0B6038143 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		EB582AB550F5840EB47F0799 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F3CFA77FEDCE38BEC08DA3ED /* AzkariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkariApp.swift; sourceTree = "<group>"; };
+		F898F29EC7DDD68DFFFA051F /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		F8FAC6DCF12FBF8B90611747 /* LibrarySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		017DB17A0C8A228EB12C20D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67D1075100662C9E5C92119E /* Azkari.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DAEF36249AEFAD0C3E088D1 /* Azkari */ = {
+			isa = PBXGroup;
+			children = (
+				7E1A142CC7D2360B3201C7F1 /* App */,
+				97AA596712D36B870E0F7169 /* MenuBar */,
+				7A4EF584FF0A6AA33AF5FC06 /* Model */,
+				4E0B1C6D48084D790908DE6A /* Panel */,
+				D1166E9BAD08525140FA3486 /* Persistence */,
+				BA34E248B1E814CC47F653E8 /* Scheduling */,
+				BA9893AFA2C62A0B363BCFF0 /* Settings */,
+				ABD1F53C9C1AACE4EB424761 /* System */,
+			);
+			path = Azkari;
+			sourceTree = "<group>";
+		};
+		4E0B1C6D48084D790908DE6A /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				A806DACFADC8AB6954032C12 /* DhikrPanel.swift */,
+				73D7A5DBD307C95D6D7775D6 /* DhikrPanelController.swift */,
+				93474D2B337B55CFDBB02A7E /* DhikrToastView.swift */,
+				7CCBD4080C90D81AB0B91783 /* ScreenPositioning.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		638A73FBCD786EA7F16BC2DE = {
+			isa = PBXGroup;
+			children = (
+				FD2B82D410F55C3733AF1FCE /* Resources */,
+				E0BC35796B840F05DD1D84A5 /* Sources */,
+				017DB17A0C8A228EB12C20D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A4EF584FF0A6AA33AF5FC06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36B783BEF1699D4197C1336D /* Dhikr.swift */,
+				4708796C0944AB30CA8FEAA5 /* Enums.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E1A142CC7D2360B3201C7F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9DB33D9A38791EE7EB4470E7 /* AppDelegate.swift */,
+				F898F29EC7DDD68DFFFA051F /* AppModel.swift */,
+				F3CFA77FEDCE38BEC08DA3ED /* AzkariApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		97AA596712D36B870E0F7169 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8A41722EE18547418FE6B /* MenuBarMenu.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		ABD1F53C9C1AACE4EB424761 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				13F3FA420B818CFB95092F64 /* LoginItem.swift */,
+				DC37D0F517346DC0B6038143 /* SoundPlayer.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		BA34E248B1E814CC47F653E8 /* Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				11E3DF43A634AA13A3234FD7 /* DhikrSelector.swift */,
+				3FDB4B04149092E62E7A3A11 /* Scheduler.swift */,
+			);
+			path = Scheduling;
+			sourceTree = "<group>";
+		};
+		BA9893AFA2C62A0B363BCFF0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5A0EA3EE2F80722A9883E53F /* AboutView.swift */,
+				213E2C1431EBB47F453BA254 /* AppearanceSettingsView.swift */,
+				CB7076C57B0E37EBDCD870D2 /* DhikrEditorView.swift */,
+				5670E8697CE8F6421D2B4906 /* GeneralSettingsView.swift */,
+				F8FAC6DCF12FBF8B90611747 /* LibrarySettingsView.swift */,
+				EB582AB550F5840EB47F0799 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1166E9BAD08525140FA3486 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A73B400A9CA004F00ED4902C /* DhikrStore.swift */,
+				5D9985C3F252897D9C9F11B4 /* Preferences.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		E0BC35796B840F05DD1D84A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4DAEF36249AEFAD0C3E088D1 /* Azkari */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FD2B82D410F55C3733AF1FCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A71DBD262C91AC578BFDE754 /* adhkar.json */,
+				46EA5AE83EF949C6FD4EE46D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA6154C2DCEB57E4AA1C332 /* Azkari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408D88199D2F7403F78C2E81 /* Build configuration list for PBXNativeTarget "Azkari" */;
+			buildPhases = (
+				D3328DB4BBC311A9A836CD29 /* Sources */,
+				C2A13E1FA520FDD02E5F2959 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Azkari;
+			packageProductDependencies = (
+			);
+			productName = Azkari;
+			productReference = 67D1075100662C9E5C92119E /* Azkari.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3C7B4D8A4E15D97BD23D2BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DAA6154C2DCEB57E4AA1C332 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C7B147356FF4D2E298A62A17 /* Build configuration list for PBXProject "Azkari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 638A73FBCD786EA7F16BC2DE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 017DB17A0C8A228EB12C20D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA6154C2DCEB57E4AA1C332 /* Azkari */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2A13E1FA520FDD02E5F2959 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0D216F445319BEB083DFE2 /* Assets.xcassets in Resources */,
+				DA55BFC7CCCA3D0BB98E23AD /* adhkar.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3328DB4BBC311A9A836CD29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548E791AE0E5C437263EC221 /* AboutView.swift in Sources */,
+				2311B2DC768EFC0E156C7644 /* AppDelegate.swift in Sources */,
+				81BA6B8DB87FF1D9818337C4 /* AppModel.swift in Sources */,
+				9548CED646C3D0C026D65774 /* AppearanceSettingsView.swift in Sources */,
+				3C620F5BC8232FCA47D21E81 /* AzkariApp.swift in Sources */,
+				817B11DDB48A837E8EF2B55C /* Dhikr.swift in Sources */,
+				952C0FDC71AEBD11B13F035F /* DhikrEditorView.swift in Sources */,
+				F1C9239788AE1392E59E0091 /* DhikrPanel.swift in Sources */,
+				3438D2AF5B2900B4A6C4684C /* DhikrPanelController.swift in Sources */,
+				5921AC573612C2B2374406E2 /* DhikrSelector.swift in Sources */,
+				A2BD1E48BA80EDD81B9F4762 /* DhikrStore.swift in Sources */,
+				0B4C9980033CDD9DF1AB90CA /* DhikrToastView.swift in Sources */,
+				E0849D342B88BBED559A3205 /* Enums.swift in Sources */,
+				8CBE16814A9DB877A85291DB /* GeneralSettingsView.swift in Sources */,
+				C60D423860238D53D87CD427 /* LibrarySettingsView.swift in Sources */,
+				AB58098164E6B26972CC5F16 /* LoginItem.swift in Sources */,
+				6BE26A6B76A3F735FBF49214 /* MenuBarMenu.swift in Sources */,
+				BABB2874EED69D90DFAA3EBD /* Preferences.swift in Sources */,
+				44615B82704DFF578CB8CA04 /* Scheduler.swift in Sources */,
+				7A8C069D39F008E3765FBDE4 /* ScreenPositioning.swift in Sources */,
+				F077EF1E6A221DF45430D55D /* SettingsView.swift in Sources */,
+				A42E9056613B6838A596D3A3 /* SoundPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1EB8F7031F21398BD140270F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = Azkari;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldentik.azkari;
+				PRODUCT_NAME = Azkari;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C4219604D9EB01490658761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8C13D706969135BF14600F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		EF51F95573AA270865EC7D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = Azkari;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldentik.azkari;
+				PRODUCT_NAME = Azkari;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		408D88199D2F7403F78C2E81 /* Build configuration list for PBXNativeTarget "Azkari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB8F7031F21398BD140270F /* Debug */,
+				EF51F95573AA270865EC7D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7B147356FF4D2E298A62A17 /* Build configuration list for PBXProject "Azkari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4219604D9EB01490658761 /* Debug */,
+				8C13D706969135BF14600F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3C7B4D8A4E15D97BD23D2BE /* Project object */;
+}
