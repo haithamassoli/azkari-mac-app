@@ -7,7 +7,7 @@ struct AboutView: View {
                 .font(.system(size: 52))
                 .foregroundStyle(.tint)
 
-            Text("أذكاري")
+            Text("ذكر")
                 .font(.largeTitle.bold())
 
             Text("تطبيقٌ يعرض الأذكار بشكلٍ دوري في زاوية الشاشة.")

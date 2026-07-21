@@ -27,7 +27,7 @@ struct MenuBarMenu: View {
 
         Divider()
 
-        Button("إنهاء أذكاري") {
+        Button("إنهاء ذكر") {
             NSApplication.shared.terminate(nil)
         }
         .keyboardShortcut("q")
