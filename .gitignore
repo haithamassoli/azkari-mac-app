@@ -1,7 +1,10 @@
 # Build artifacts
 .build/
+.build-dmg/
 DerivedData/
 build/
+dist/
+*.dmg
 
 # Xcode user state (the generated .xcodeproj itself is kept so the app
 # can be opened/run in Xcode without requiring xcodegen)
