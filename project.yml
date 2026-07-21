@@ -1,6 +1,6 @@
-name: Azkari
+name: Dhikr
 options:
-  bundleIdPrefix: com.goldentik
+  bundleIdPrefix: com.haithamassoli
   deploymentTarget:
     macOS: "14.0"
   createIntermediateGroups: true
@@ -19,22 +19,22 @@ settings:
     COMBINE_HIDPI_IMAGES: YES
 
 targets:
-  Azkari:
+  Dhikr:
     type: application
     platform: macOS
     deploymentTarget: "14.0"
     sources:
-      - path: Sources/Azkari
+      - path: Sources/Dhikr
       - path: Resources
         buildPhase: resources
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.goldentik.azkari
-        PRODUCT_NAME: Azkari
+        PRODUCT_BUNDLE_IDENTIFIER: com.haithamassoli.dhikr
+        PRODUCT_NAME: Dhikr
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_LSUIElement: YES
         INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.lifestyle"
-        INFOPLIST_KEY_NSHumanReadableCopyright: "Azkari"
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Dhikr"
         INFOPLIST_KEY_NSMainNibFile: ""
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor

@@ -23,7 +23,7 @@ final class DhikrStore {
                                                  appropriateFor: nil,
                                                  create: true))
             ?? URL(fileURLWithPath: NSHomeDirectory())
-        let dir = base.appendingPathComponent("Azkari", isDirectory: true)
+        let dir = base.appendingPathComponent("Dhikr", isDirectory: true)
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         fileURL = dir.appendingPathComponent("adhkar.json")
     }

@@ -1,12 +1,12 @@
 import SwiftUI
 
 @main
-struct AzkariApp: App {
+struct DhikrApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     private let appModel = AppModel.shared
 
     var body: some Scene {
-        MenuBarExtra("أذكاري", systemImage: "moon.stars") {
+        MenuBarExtra("ذِكر", systemImage: "moon.stars") {
             MenuBarMenu()
                 .environment(appModel)
         }

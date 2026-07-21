@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E18A72132A795F1ECB3E09A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45B4F1EB95CAB4E0ABCF12 /* AppModel.swift */; };
+		1FB430DC19B908E74CD530C1 /* DhikrPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CDC3119397F7DC28243A53 /* DhikrPanelController.swift */; };
+		264410E9DFA5CC94A7FAA5BE /* DhikrEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD701A8985771043D6788D /* DhikrEditorView.swift */; };
+		2892BB77114BF16393C3D039 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949EE94EF03C0077FB95E83F /* Preferences.swift */; };
+		313AF81F5E9F5FC5A46AD376 /* LibrarySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF95435E4420F2FFFE1AE4C /* LibrarySettingsView.swift */; };
+		32BB8CAF16F74FF6887FA25B /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739B2A0BC591CDC44D0EDB9 /* Scheduler.swift */; };
+		38E8F9FE73DEC1D933E5A2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693616F725B409A0AE79CE90 /* Assets.xcassets */; };
+		554B74FAB6CF7E0F29CF1100 /* ScreenPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A947433BB37ADD72600648C /* ScreenPositioning.swift */; };
+		596BA34AEED24BC5C9C77C58 /* DhikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2BD25E5CA5D54AAF498ABB /* DhikrApp.swift */; };
+		610F241EBB2E77988B43D2F2 /* DhikrSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB755592A35276FA23526866 /* DhikrSelector.swift */; };
+		74D7BC3D7C0D8EEDC1B77F52 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D170784D4D68CDE160F67 /* AboutView.swift */; };
+		75CF060BDD098BD3A08961C0 /* MenuBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */; };
+		9BAE38BCC5A9934284D5CCDD /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FEF7E4D25F6D48F1BA5014 /* AppearanceSettingsView.swift */; };
+		A77830B2FFE2A43424A0FABA /* adhkar.json in Resources */ = {isa = PBXBuildFile; fileRef = 233241E238A9ACC6778DF49D /* adhkar.json */; };
+		BFB409D6770203846F9885D8 /* Dhikr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778BBFFC79ACFA538501034 /* Dhikr.swift */; };
+		C0C8F57FF9E648BF5E6DFFE2 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A43062B524DE5A07066A8 /* LoginItem.swift */; };
+		C0E8CAE65401B4DDBC69BD3A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5751F3BEC0ED4777C7CAAD /* SoundPlayer.swift */; };
+		CAD91ACC9E27D9AEB7584040 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A88FCF2AE07E012F68916B /* GeneralSettingsView.swift */; };
+		D5E02F5E1DBCC25956862347 /* DhikrToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC50DE90E324F1AC4528720 /* DhikrToastView.swift */; };
+		E1DB7CFF02568203DC08BB25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA036276283D8C1EDDE8E51 /* AppDelegate.swift */; };
+		EC8B96B11B3B6B0D1E9E5A15 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77929A2A4624A60291972013 /* SettingsView.swift */; };
+		F1827061B0C5C649B921E137 /* DhikrPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4ED39BA9B97220893F90E /* DhikrPanel.swift */; };
+		F272B3B8AF249A1C47F4B709 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C585A9D91C4DF484670D91 /* Enums.swift */; };
+		F4935880FDE11A44C8284962 /* DhikrStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF3A5F47FABBAD764C5FDE /* DhikrStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DAD701A8985771043D6788D /* DhikrEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrEditorView.swift; sourceTree = "<group>"; };
+		1AC50DE90E324F1AC4528720 /* DhikrToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrToastView.swift; sourceTree = "<group>"; };
+		233241E238A9ACC6778DF49D /* adhkar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adhkar.json; sourceTree = "<group>"; };
+		2778BBFFC79ACFA538501034 /* Dhikr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhikr.swift; sourceTree = "<group>"; };
+		38CDC3119397F7DC28243A53 /* DhikrPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrPanelController.swift; sourceTree = "<group>"; };
+		4CF58C158C952A69AADC0AE4 /* Dhikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dhikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5739B2A0BC591CDC44D0EDB9 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		578A43062B524DE5A07066A8 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		693616F725B409A0AE79CE90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77929A2A4624A60291972013 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		82A4ED39BA9B97220893F90E /* DhikrPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrPanel.swift; sourceTree = "<group>"; };
+		8A2BD25E5CA5D54AAF498ABB /* DhikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrApp.swift; sourceTree = "<group>"; };
+		8DA036276283D8C1EDDE8E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		949EE94EF03C0077FB95E83F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		96A88FCF2AE07E012F68916B /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		97C585A9D91C4DF484670D91 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9A947433BB37ADD72600648C /* ScreenPositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPositioning.swift; sourceTree = "<group>"; };
+		9F5751F3BEC0ED4777C7CAAD /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		A51D170784D4D68CDE160F67 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarMenu.swift; sourceTree = "<group>"; };
+		CD45B4F1EB95CAB4E0ABCF12 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		DBF95435E4420F2FFFE1AE4C /* LibrarySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsView.swift; sourceTree = "<group>"; };
+		EB755592A35276FA23526866 /* DhikrSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrSelector.swift; sourceTree = "<group>"; };
+		F0FEF7E4D25F6D48F1BA5014 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsView.swift; sourceTree = "<group>"; };
+		F4BF3A5F47FABBAD764C5FDE /* DhikrStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		050031C04F1789E1F736383D /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		070ACD16285F595F420DF319 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F4BF3A5F47FABBAD764C5FDE /* DhikrStore.swift */,
+				949EE94EF03C0077FB95E83F /* Preferences.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		1AE2A3D7A2D678551E2812B8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A51D170784D4D68CDE160F67 /* AboutView.swift */,
+				F0FEF7E4D25F6D48F1BA5014 /* AppearanceSettingsView.swift */,
+				0DAD701A8985771043D6788D /* DhikrEditorView.swift */,
+				96A88FCF2AE07E012F68916B /* GeneralSettingsView.swift */,
+				DBF95435E4420F2FFFE1AE4C /* LibrarySettingsView.swift */,
+				77929A2A4624A60291972013 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		47CFE013AB39391826506241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CF58C158C952A69AADC0AE4 /* Dhikr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51687B2D15EB7511F6D1CB16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				233241E238A9ACC6778DF49D /* adhkar.json */,
+				693616F725B409A0AE79CE90 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71C70C1D3DD2D7450CFD76EF /* Dhikr */ = {
+			isa = PBXGroup;
+			children = (
+				DBE400B07E02E07BC61D95FA /* App */,
+				050031C04F1789E1F736383D /* MenuBar */,
+				C1AFA5045583E996C3D1091E /* Model */,
+				B325241E98B4AEBCD40E34A7 /* Panel */,
+				070ACD16285F595F420DF319 /* Persistence */,
+				FE6C0E0AE2279D2395E8911B /* Scheduling */,
+				1AE2A3D7A2D678551E2812B8 /* Settings */,
+				E18B38F61CFAB993250B8985 /* System */,
+			);
+			path = Dhikr;
+			sourceTree = "<group>";
+		};
+		9CA1451BCD24754C761C3897 = {
+			isa = PBXGroup;
+			children = (
+				51687B2D15EB7511F6D1CB16 /* Resources */,
+				CF9413AE2454A2F80DD9E03B /* Sources */,
+				47CFE013AB39391826506241 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B325241E98B4AEBCD40E34A7 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				82A4ED39BA9B97220893F90E /* DhikrPanel.swift */,
+				38CDC3119397F7DC28243A53 /* DhikrPanelController.swift */,
+				1AC50DE90E324F1AC4528720 /* DhikrToastView.swift */,
+				9A947433BB37ADD72600648C /* ScreenPositioning.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		C1AFA5045583E996C3D1091E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2778BBFFC79ACFA538501034 /* Dhikr.swift */,
+				97C585A9D91C4DF484670D91 /* Enums.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF9413AE2454A2F80DD9E03B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				71C70C1D3DD2D7450CFD76EF /* Dhikr */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DBE400B07E02E07BC61D95FA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8DA036276283D8C1EDDE8E51 /* AppDelegate.swift */,
+				CD45B4F1EB95CAB4E0ABCF12 /* AppModel.swift */,
+				8A2BD25E5CA5D54AAF498ABB /* DhikrApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E18B38F61CFAB993250B8985 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				578A43062B524DE5A07066A8 /* LoginItem.swift */,
+				9F5751F3BEC0ED4777C7CAAD /* SoundPlayer.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		FE6C0E0AE2279D2395E8911B /* Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				EB755592A35276FA23526866 /* DhikrSelector.swift */,
+				5739B2A0BC591CDC44D0EDB9 /* Scheduler.swift */,
+			);
+			path = Scheduling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8057E114C0432FA1B744562A /* Dhikr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5480379BDFBC383F7FB0034F /* Build configuration list for PBXNativeTarget "Dhikr" */;
+			buildPhases = (
+				1ED31F841BEDDD02EB6E5257 /* Sources */,
+				13139AC6B73573995DB6A9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dhikr;
+			packageProductDependencies = (
+			);
+			productName = Dhikr;
+			productReference = 4CF58C158C952A69AADC0AE4 /* Dhikr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99FED055C5F2BFCBD8F9BD8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8057E114C0432FA1B744562A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 230BE66BBBCE1B6D4D1AE6C0 /* Build configuration list for PBXProject "Dhikr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9CA1451BCD24754C761C3897;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 47CFE013AB39391826506241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8057E114C0432FA1B744562A /* Dhikr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13139AC6B73573995DB6A9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E8F9FE73DEC1D933E5A2D7 /* Assets.xcassets in Resources */,
+				A77830B2FFE2A43424A0FABA /* adhkar.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED31F841BEDDD02EB6E5257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D7BC3D7C0D8EEDC1B77F52 /* AboutView.swift in Sources */,
+				E1DB7CFF02568203DC08BB25 /* AppDelegate.swift in Sources */,
+				0E18A72132A795F1ECB3E09A /* AppModel.swift in Sources */,
+				9BAE38BCC5A9934284D5CCDD /* AppearanceSettingsView.swift in Sources */,
+				BFB409D6770203846F9885D8 /* Dhikr.swift in Sources */,
+				596BA34AEED24BC5C9C77C58 /* DhikrApp.swift in Sources */,
+				264410E9DFA5CC94A7FAA5BE /* DhikrEditorView.swift in Sources */,
+				F1827061B0C5C649B921E137 /* DhikrPanel.swift in Sources */,
+				1FB430DC19B908E74CD530C1 /* DhikrPanelController.swift in Sources */,
+				610F241EBB2E77988B43D2F2 /* DhikrSelector.swift in Sources */,
+				F4935880FDE11A44C8284962 /* DhikrStore.swift in Sources */,
+				D5E02F5E1DBCC25956862347 /* DhikrToastView.swift in Sources */,
+				F272B3B8AF249A1C47F4B709 /* Enums.swift in Sources */,
+				CAD91ACC9E27D9AEB7584040 /* GeneralSettingsView.swift in Sources */,
+				313AF81F5E9F5FC5A46AD376 /* LibrarySettingsView.swift in Sources */,
+				C0C8F57FF9E648BF5E6DFFE2 /* LoginItem.swift in Sources */,
+				75CF060BDD098BD3A08961C0 /* MenuBarMenu.swift in Sources */,
+				2892BB77114BF16393C3D039 /* Preferences.swift in Sources */,
+				32BB8CAF16F74FF6887FA25B /* Scheduler.swift in Sources */,
+				554B74FAB6CF7E0F29CF1100 /* ScreenPositioning.swift in Sources */,
+				EC8B96B11B3B6B0D1E9E5A15 /* SettingsView.swift in Sources */,
+				C0E8CAE65401B4DDBC69BD3A /* SoundPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		12B6DA869AED2558B6EE57C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = Dhikr;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithamassoli.dhikr;
+				PRODUCT_NAME = Dhikr;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3E0C565B371EF3B00BEDFF10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = Dhikr;
+				INFOPLIST_KEY_NSMainNibFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithamassoli.dhikr;
+				PRODUCT_NAME = Dhikr;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E37DD38DB794EC6D417BFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		91DB989C8BD6DDDFAF9DC2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230BE66BBBCE1B6D4D1AE6C0 /* Build configuration list for PBXProject "Dhikr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DB989C8BD6DDDFAF9DC2A5 /* Debug */,
+				7E37DD38DB794EC6D417BFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5480379BDFBC383F7FB0034F /* Build configuration list for PBXNativeTarget "Dhikr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0C565B371EF3B00BEDFF10 /* Debug */,
+				12B6DA869AED2558B6EE57C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99FED055C5F2BFCBD8F9BD8A /* Project object */;
+}
