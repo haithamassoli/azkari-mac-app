@@ -21,6 +21,7 @@ final class AppModel {
 
     private var started = false
     private var wakeObserver: (any NSObjectProtocol)?
+    private var onboarding: OnboardingWindowController?
 
     private init() {}
 
@@ -35,6 +36,29 @@ final class AppModel {
         scheduler.start()
         observeWake()
         refreshLoginStatus()
+
+        if !hasOnboarded { presentOnboarding() }
+    }
+
+    // MARK: - Onboarding
+
+    /// First-run flag (the only new persistent concept). False until onboarding
+    /// is finished or its window is closed.
+    var hasOnboarded: Bool {
+        get { UserDefaults.standard.bool(forKey: DefaultsKeys.hasOnboarded) }
+        set { UserDefaults.standard.set(newValue, forKey: DefaultsKeys.hasOnboarded) }
+    }
+
+    private func presentOnboarding() {
+        let controller = OnboardingWindowController(onFinish: { [weak self] in
+            guard let self else { return }
+            self.hasOnboarded = true
+            // Release next tick so the controller isn't torn down from inside
+            // its own windowWillClose.
+            Task { @MainActor in self.onboarding = nil }
+        })
+        onboarding = controller
+        controller.show(app: self)
     }
 
     // MARK: - Adhkar

@@ -21,6 +21,7 @@
 		75CF060BDD098BD3A08961C0 /* MenuBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */; };
 		8326383D5D87282E9393ABF4 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEDCE645F47ECE835C0460 /* Localization.swift */; };
 		9BAE38BCC5A9934284D5CCDD /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FEF7E4D25F6D48F1BA5014 /* AppearanceSettingsView.swift */; };
+		A1B2C3D4E5F60718293A4B5C /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F60718293A4B5C6D /* Onboarding.swift */; };
 		A77830B2FFE2A43424A0FABA /* adhkar.json in Resources */ = {isa = PBXBuildFile; fileRef = 233241E238A9ACC6778DF49D /* adhkar.json */; };
 		BFB409D6770203846F9885D8 /* Dhikr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778BBFFC79ACFA538501034 /* Dhikr.swift */; };
 		C0C8F57FF9E648BF5E6DFFE2 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A43062B524DE5A07066A8 /* LoginItem.swift */; };
@@ -55,6 +56,7 @@
 		9A947433BB37ADD72600648C /* ScreenPositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPositioning.swift; sourceTree = "<group>"; };
 		9F5751F3BEC0ED4777C7CAAD /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		A51D170784D4D68CDE160F67 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F60718293A4B5C6D /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarMenu.swift; sourceTree = "<group>"; };
 		CD45B4F1EB95CAB4E0ABCF12 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		DBF95435E4420F2FFFE1AE4C /* LibrarySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				410ABB9704CB70C7B18FEE1F /* Localization */,
 				050031C04F1789E1F736383D /* MenuBar */,
 				C1AFA5045583E996C3D1091E /* Model */,
+				C3D4E5F60718293A4B5C6D7E /* Onboarding */,
 				B325241E98B4AEBCD40E34A7 /* Panel */,
 				070ACD16285F595F420DF319 /* Persistence */,
 				FE6C0E0AE2279D2395E8911B /* Scheduling */,
@@ -162,6 +165,14 @@
 				97C585A9D91C4DF484670D91 /* Enums.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C3D4E5F60718293A4B5C6D7E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3D4E5F60718293A4B5C6D /* Onboarding.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		CF9413AE2454A2F80DD9E03B /* Sources */ = {
@@ -229,12 +240,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					8057E114C0432FA1B744562A = {
-						DevelopmentTeam = "";
-						ProvisioningStyle = Manual;
-					};
-				};
 			};
 			buildConfigurationList = 230BE66BBBCE1B6D4D1AE6C0 /* Build configuration list for PBXProject "Dhikr" */;
 			developmentRegion = en;
@@ -295,6 +300,7 @@
 				554B74FAB6CF7E0F29CF1100 /* ScreenPositioning.swift in Sources */,
 				EC8B96B11B3B6B0D1E9E5A15 /* SettingsView.swift in Sources */,
 				C0E8CAE65401B4DDBC69BD3A /* SoundPlayer.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +312,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U3C6DM4QX4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dhikr - ذكر";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = Dhikr;
@@ -319,6 +340,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haithamassoli.dhikr;
 				PRODUCT_NAME = Dhikr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -328,8 +350,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U3C6DM4QX4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dhikr - ذكر";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = Dhikr;
@@ -341,6 +378,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haithamassoli.dhikr;
 				PRODUCT_NAME = Dhikr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;

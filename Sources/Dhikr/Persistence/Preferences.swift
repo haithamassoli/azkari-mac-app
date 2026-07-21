@@ -15,6 +15,7 @@ enum DefaultsKeys {
     static let timeAwareEnabled   = "timeAwareEnabled"
     static let counterEnabled     = "counterEnabled"
     static let language           = "language"
+    static let hasOnboarded       = "hasOnboarded"
 }
 
 /// Observable, UserDefaults-backed settings. A single instance lives on `AppModel`

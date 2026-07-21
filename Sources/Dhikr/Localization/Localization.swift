@@ -77,6 +77,9 @@ enum LocKey {
     // Settings tabs
     case tabGeneral, tabAppearance, tabLibrary, tabAbout
 
+    // Onboarding
+    case onbWelcomeTitle, onbWelcomeSubtitle, onbIntervalQuestion, onbMinutes, onbChooseAdhkar, onbStart
+
     /// `%d` placeholders are filled by `AppLanguage.tr(_:_:)`.
     func text(_ lang: AppLanguage) -> String {
         let ar = lang == .arabic
@@ -150,6 +153,13 @@ enum LocKey {
         case .tabAppearance:    return ar ? "المظهر" : "Appearance"
         case .tabLibrary:       return ar ? "الأذكار" : "Adhkar"
         case .tabAbout:         return ar ? "حول" : "About"
+
+        case .onbWelcomeTitle:    return ar ? "أهلًا بك في ذِكر" : "Welcome to Dhikr"
+        case .onbWelcomeSubtitle: return ar ? "لنُهيّئ تذكيراتك في خطوات قصيرة." : "Let's set up your reminders in a few quick steps."
+        case .onbIntervalQuestion: return ar ? "كل كم يظهر التذكير؟" : "How often should a reminder appear?"
+        case .onbMinutes:         return ar ? "%d دقيقة" : "%d min"
+        case .onbChooseAdhkar:    return ar ? "اختر الأذكار التي تريد تفعيلها" : "Choose which adhkar to enable"
+        case .onbStart:           return ar ? "ابدأ الآن" : "Get Started"
         }
     }
 }
