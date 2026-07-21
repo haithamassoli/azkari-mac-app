@@ -58,7 +58,7 @@ enum LocKey {
     // Appearance settings
     case sectionPosition, cornerLabel
     case sectionDuration, displayDurationSecs
-    case sectionFontContent, fontSizeLabel, showTransliteration, showTranslation, showCounter
+    case sectionFontContent, fontSizeLabel, adhkarInEnglish, showTransliteration, showTranslation, showCounter
     case sectionSound, playSoundOnShow, testSound
     case previewNow
 
@@ -114,6 +114,7 @@ enum LocKey {
         case .displayDurationSecs: return ar ? "مدّة الظهور: %d ثانية" : "Display duration: %d s"
         case .sectionFontContent:  return ar ? "الخط والمحتوى" : "Font & content"
         case .fontSizeLabel:    return ar ? "حجم الخط: %d" : "Font size: %d"
+        case .adhkarInEnglish:  return ar ? "عرض الأذكار بالإنجليزية (مثل Alhamdulillah)" : "Show adhkar in English (e.g. Alhamdulillah)"
         case .showTransliteration: return ar ? "إظهار النقحرة (حروف لاتينية)" : "Show transliteration (Latin letters)"
         case .showTranslation:  return ar ? "إظهار الترجمة" : "Show translation"
         case .showCounter:      return ar ? "إظهار عدّاد التسبيح (اضغط للعدّ)" : "Show tasbeeh counter (tap to count)"

@@ -1,0 +1,389 @@
+<meta charset="utf-8">
+<title>Dhikr — App Store screenshots</title>
+<!-- Marketing-screenshot generator. Each <section class="shot"> is one App Store
+     frame, authored at 1440x900 logical px and captured at devicePixelRatio 2
+     (viewport 1440x900x2) => 2880x1800 PNG, a valid Mac App Store size.
+     Only the :target section shows, so navigate to screenshots.html#hero etc. -->
+<style>
+  :root{
+    --gold:#edc271; --gold-soft:#f4d79b; --blue:#0A84FF; --green:#32d74b;
+    --ink:#f5f2ea; --ink-2:rgba(245,242,234,.60); --ink-3:rgba(245,242,234,.34);
+    --card:rgba(28,36,47,.66); --hair:rgba(255,255,255,.09);
+    --ar:"SF Arabic","Geeza Pro","Al Bayan",-apple-system,sans-serif;
+    --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1440px;height:900px;overflow:hidden;background:#05101b}
+  body{font-family:var(--ui);-webkit-font-smoothing:antialiased;color:var(--ink)}
+
+  .shot{
+    position:fixed;inset:0;display:none;flex-direction:column;align-items:center;
+    background:
+      radial-gradient(120% 90% at 50% -18%, #1d4a63 0%, #123246 34%, #0b2030 60%, #061420 100%);
+    overflow:hidden;
+  }
+  .shot:target{display:flex}
+  /* faint starfield */
+  .shot::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:
+      radial-gradient(1.6px 1.6px at 12% 22%, #fff8 40%, transparent),
+      radial-gradient(1.4px 1.4px at 82% 14%, #fff6 40%, transparent),
+      radial-gradient(1.3px 1.3px at 66% 30%, #fff5 40%, transparent),
+      radial-gradient(1.5px 1.5px at 30% 12%, #fff7 40%, transparent),
+      radial-gradient(1.2px 1.2px at 92% 40%, #fff4 40%, transparent),
+      radial-gradient(1.2px 1.2px at 8% 46%, #fff4 40%, transparent);
+  }
+
+  .copy{padding-top:66px;text-align:center;position:relative;z-index:2}
+  .copy h1{font-size:59px;line-height:1.04;font-weight:700;letter-spacing:-1.6px}
+  .copy h1 em{font-style:normal;color:var(--gold)}
+  .copy p{margin-top:17px;font-size:22px;font-weight:400;color:var(--ink-2);
+    letter-spacing:-.2px;max-width:820px;margin-left:auto;margin-right:auto}
+
+  .canvas{position:relative;width:1188px;height:582px;margin-top:40px;border-radius:26px;
+    overflow:hidden;box-shadow:0 46px 130px -30px rgba(0,0,0,.72),0 0 0 1px var(--hair);z-index:1}
+
+  /* ---- macOS desktop inside the canvas ---- */
+  .desktop{position:absolute;inset:0;
+    background:
+      radial-gradient(80% 70% at 20% 108%, rgba(237,194,113,.20), transparent 60%),
+      radial-gradient(90% 80% at 88% -10%, rgba(60,150,180,.28), transparent 55%),
+      linear-gradient(160deg,#20506b 0%,#153a52 42%,#0d2436 100%);}
+  .desktop::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.6;
+    background-image:
+      radial-gradient(1.5px 1.5px at 24% 30%, #fff7,transparent),
+      radial-gradient(1.3px 1.3px at 70% 22%, #fff6,transparent),
+      radial-gradient(1.4px 1.4px at 54% 60%, #fff4,transparent),
+      radial-gradient(1.2px 1.2px at 86% 66%, #fff5,transparent);}
+  /* big soft crescent glow lower-left */
+  .desktop .moonglow{position:absolute;left:-60px;bottom:-90px;width:360px;height:360px;
+    border-radius:50%;background:radial-gradient(circle at 60% 40%,rgba(244,215,155,.32),transparent 62%);filter:blur(6px)}
+
+  .menubar{position:absolute;top:0;left:0;right:0;height:26px;z-index:5;
+    display:flex;align-items:center;gap:18px;padding:0 12px;font-size:12.5px;color:#fff;
+    background:rgba(4,14,24,.34);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .menubar .mb-app{font-weight:700}
+  .menubar .mb-menus{display:flex;gap:16px;color:rgba(255,255,255,.9);font-weight:400}
+  .menubar .mb-right{margin-left:auto;display:flex;align-items:center;gap:14px}
+  .menubar svg{display:block}
+  .mb-status{display:flex;align-items:center;justify-content:center;width:24px;height:20px;border-radius:5px}
+  .mb-status.sel{background:rgba(255,255,255,.22)}
+
+  .dock{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;z-index:4;
+    display:flex;gap:11px;padding:9px 12px;border-radius:20px;
+    background:rgba(255,255,255,.12);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+    box-shadow:0 12px 30px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.12)}
+  .dock .app{width:44px;height:44px;border-radius:11px;box-shadow:0 4px 8px rgba(0,0,0,.25)}
+  .dock .app.moon{background:radial-gradient(120% 120% at 50% 0,#2f6f8f,#123146);position:relative}
+  .dock .app.moon svg{position:absolute;inset:0;margin:auto;width:28px;height:28px}
+
+  /* ---- popup card (faithful DhikrToastView) ---- */
+  .card{position:absolute;width:320px;padding:18px;border-radius:18px;z-index:6;
+    background:var(--card);backdrop-filter:blur(30px) saturate(1.4);-webkit-backdrop-filter:blur(30px) saturate(1.4);
+    box-shadow:0 24px 60px -12px rgba(0,0,0,.6),inset 0 0 0 1px var(--hair);
+    display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+  .card .chead{display:flex;align-items:center;width:100%;gap:8px;direction:rtl}
+  .card .csrc{font-size:11.5px;color:var(--ink-2);font-family:var(--ar)}
+  .card .cx{margin-inline-start:auto;color:var(--ink-3);font-size:15px}
+  .card .arabic{font-family:var(--ar);font-size:29px;font-weight:500;line-height:1.5;direction:rtl}
+  .card .translit{font-size:14px;color:var(--ink-2);font-style:italic;line-height:1.35}
+  .card .trans{font-size:13px;color:var(--ink-2);line-height:1.4}
+  .card .counter{display:flex;flex-direction:column;align-items:center;gap:7px;margin-top:2px}
+  .card .cnum{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:1px}
+  .card .cbar{width:180px;height:6px;border-radius:3px;background:rgba(255,255,255,.14);overflow:hidden}
+  .card .cbar>i{display:block;height:100%;border-radius:3px;background:var(--blue)}
+  .card .ctap{font-size:11px;color:var(--ink-3)}
+
+  /* ---- macOS dropdown menu ---- */
+  .macmenu{position:absolute;z-index:7;width:250px;padding:5px;border-radius:9px;
+    background:rgba(34,34,40,.68);backdrop-filter:blur(40px) saturate(1.6);-webkit-backdrop-filter:blur(40px) saturate(1.6);
+    box-shadow:0 26px 60px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.12);font-size:13px}
+  .macmenu .mi{display:flex;align-items:center;justify-content:space-between;padding:5px 10px;border-radius:5px;color:#fff}
+  .macmenu .mi.hl{background:linear-gradient(180deg,#1e90ff,#0a7bf0);color:#fff}
+  .macmenu .mi.dim{color:rgba(255,255,255,.32)}
+  .macmenu .mi .kbd{color:rgba(255,255,255,.5);font-size:12px}
+  .macmenu .mi.hl .kbd{color:rgba(255,255,255,.85)}
+  .macmenu .sep{height:1px;margin:5px 8px;background:rgba(255,255,255,.13)}
+
+  /* ---- settings window ---- */
+  .window{position:absolute;z-index:6;border-radius:12px;overflow:hidden;
+    background:rgba(38,41,48,.97);box-shadow:0 46px 110px -24px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.09)}
+  .titlebar{height:52px;display:flex;align-items:center;padding:0 16px;gap:14px;
+    background:rgba(48,51,59,.9);border-bottom:1px solid rgba(0,0,0,.28);position:relative}
+  .lights{display:flex;gap:8px}
+  .lights i{width:12px;height:12px;border-radius:50%}
+  .lights .r{background:#ff5f57}.lights .y{background:#febc2e}.lights .g{background:#28c840}
+  .tabs{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:6px}
+  .tab{display:flex;flex-direction:column;align-items:center;gap:2px;width:62px;padding:4px 0;border-radius:7px;
+    color:var(--ink-2);font-size:11px}
+  .tab svg{width:19px;height:19px;display:block}
+  .tab.on{background:rgba(255,255,255,.13);color:var(--ink)}
+  .wbody{padding:20px 22px;background:rgba(0,0,0,.16)}
+
+  .sec{margin-bottom:16px}
+  .sec>.lbl{font-size:12px;color:var(--ink-2);font-weight:600;margin:0 4px 7px}
+  .group{border-radius:9px;overflow:hidden;background:rgba(255,255,255,.055);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+  .row{display:flex;align-items:center;min-height:40px;padding:7px 14px;gap:12px;font-size:13.5px}
+  .row+.row{border-top:1px solid rgba(255,255,255,.06)}
+  .row .rl{flex:1}
+  .row .rr{color:var(--ink-2);display:flex;align-items:center;gap:8px}
+  .chev{color:var(--ink-3);font-size:11px}
+  .pill{display:flex;align-items:center;gap:7px;padding:4px 9px;border-radius:6px;background:rgba(255,255,255,.09);color:var(--ink);font-size:12.5px}
+  .stepper{display:flex;border-radius:6px;overflow:hidden;background:rgba(255,255,255,.11)}
+  .stepper span{padding:2px 9px;font-size:14px;color:var(--ink)}
+  .stepper span+span{border-inline-start:1px solid rgba(255,255,255,.16)}
+  .sw{width:38px;height:23px;border-radius:12px;background:rgba(255,255,255,.16);position:relative;flex:none}
+  .sw::after{content:"";position:absolute;top:2px;left:2px;width:19px;height:19px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+  .sw.on{background:var(--green)}.sw.on::after{left:17px}
+  .sw.mini{width:28px;height:17px}.sw.mini::after{width:13px;height:13px}.sw.mini.on::after{left:13px}
+  .seg{display:flex;border-radius:7px;overflow:hidden;background:rgba(255,255,255,.09);font-size:12.5px}
+  .seg span{padding:5px 20px;color:var(--ink-2)}
+  .seg span.on{background:rgba(255,255,255,.9);color:#111;font-weight:600}
+  .slider{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.16);position:relative;margin:0 6px}
+  .slider>i{position:absolute;top:0;left:0;height:100%;border-radius:2px;background:var(--blue)}
+  .slider>b{position:absolute;top:50%;width:15px;height:15px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(0,0,0,.4)}
+
+  /* library list */
+  .lib .lrow{display:flex;align-items:center;gap:11px;padding:8px 14px;font-size:13.5px}
+  .lib .lrow+.lrow{border-top:1px solid rgba(255,255,255,.06)}
+  .lib .lar{flex:1;font-family:var(--ar);direction:rtl;text-align:left;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lib .badge{font-size:11px;color:var(--ink-3)}
+  .lib .ico{color:var(--ink-3);font-size:14px}
+  .libbar{display:flex;align-items:center;padding:11px 14px;border-top:1px solid rgba(255,255,255,.09)}
+  .btn{display:flex;align-items:center;gap:6px;font-size:13px;padding:5px 12px;border-radius:7px;background:rgba(255,255,255,.1);color:var(--ink)}
+  .btn.red{color:#ff6b63;background:transparent;margin-inline-start:auto}
+
+  /* RTL settings variant */
+  .rtl{direction:rtl}
+  .rtl .row .rl,.rtl .sec>.lbl{text-align:right}
+  .rtl .titlebar{direction:ltr}   /* traffic lights stay top-left (OS chrome) */
+  .rtl .tabs{direction:rtl}       /* but the tab order mirrors with the app */
+</style>
+
+<!-- crescent glyph reused (moon.stars, monochrome white) -->
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="moon">
+    <path d="M20.5 13.2A8.2 8.2 0 1 1 10.6 3.4 6.6 6.6 0 0 0 20.5 13.2Z" fill="currentColor"/>
+    <path d="M18.4 2.2l.62 1.74 1.74.62-1.74.62-.62 1.74-.62-1.74-1.74-.62 1.74-.62z" fill="currentColor"/>
+    <path d="M21.7 6.4l.4 1.12 1.12.4-1.12.4-.4 1.12-.4-1.12-1.12-.4 1.12-.4z" fill="currentColor"/>
+  </g>
+</defs></svg>
+
+<!-- ========================= 1 · HERO ========================= -->
+<section class="shot" id="hero">
+  <div class="copy">
+    <h1>Remembrance, woven <em>gently</em><br>into your day</h1>
+    <p>A dhikr fades into the corner of your screen, then quietly slips away — no windows to manage, no notifications to clear.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop">
+      <div class="moonglow"></div>
+      <div class="menubar">
+        <span class="mb-app">Pages</span>
+        <span class="mb-menus"><span>File</span><span>Edit</span><span>Insert</span><span>Format</span></span>
+        <span class="mb-right">
+          <svg width="16" height="12" viewBox="0 0 24 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2 5a15 15 0 0 1 20 0"/><path d="M5.5 9a10 10 0 0 1 13 0"/><path d="M9 12.6a5 5 0 0 1 6 0"/><circle cx="12" cy="15.4" r="1.3" fill="#fff" stroke="none"/></svg>
+          <svg width="25" height="12" viewBox="0 0 26 13"><rect x="1" y="1" width="21" height="11" rx="3" fill="none" stroke="#fff" stroke-opacity=".6"/><rect x="3" y="3" width="14" height="7" rx="1.4" fill="#fff"/><rect x="23.5" y="4.6" width="2" height="3.8" rx="1" fill="#fff" fill-opacity=".55"/></svg>
+          <span class="mb-status"><svg width="15" height="15" viewBox="0 0 24 24" style="color:#fff"><use href="#moon"/></svg></span>
+          <span style="font-weight:500">Wed 9:41</span>
+        </span>
+      </div>
+      <div class="card" style="top:44px;right:26px">
+        <div class="chead"><span class="csrc">متفق عليه</span><span class="cx">✕</span></div>
+        <div class="arabic">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ،<br>سُبْحَانَ اللَّهِ الْعَظِيمِ</div>
+        <div class="translit">Subḥān Allāhi wa biḥamdih, Subḥān Allāhi al-ʿaẓīm</div>
+        <div class="trans">Glory be to Allah and praise Him; glory be to Allah the Most Great.</div>
+      </div>
+      <div class="dock">
+        <div class="app" style="background:linear-gradient(150deg,#5ac8fa,#0a84ff)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#ff9f0a,#ff375f)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#30d158,#248a3d)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#bf5af2,#5e5ce6)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#e5e5ea,#8e8e93)"></div>
+        <div class="app moon"><svg viewBox="0 0 24 24" style="color:#f4d79b"><use href="#moon"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 2 · COUNTER ========================= -->
+<section class="shot" id="counter">
+  <div class="copy">
+    <h1>Count your <em>tasbeeh</em><br>with a tap</h1>
+    <p>Cards with a traditional count become a quiet counter — tap to reach 33, 100, or your own number, right where you are.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop">
+      <div class="moonglow"></div>
+      <div class="menubar">
+        <span class="mb-app">Xcode</span>
+        <span class="mb-menus"><span>File</span><span>Edit</span><span>Product</span><span>Debug</span></span>
+        <span class="mb-right">
+          <svg width="16" height="12" viewBox="0 0 24 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2 5a15 15 0 0 1 20 0"/><path d="M5.5 9a10 10 0 0 1 13 0"/><path d="M9 12.6a5 5 0 0 1 6 0"/><circle cx="12" cy="15.4" r="1.3" fill="#fff" stroke="none"/></svg>
+          <span class="mb-status"><svg width="15" height="15" viewBox="0 0 24 24" style="color:#fff"><use href="#moon"/></svg></span>
+          <span style="font-weight:500">Wed 9:41</span>
+        </span>
+      </div>
+      <div class="card" style="top:44px;right:26px">
+        <div class="chead"><span class="csrc">تسبيح — متفق عليه</span><span class="cx">✕</span></div>
+        <div class="arabic" style="font-size:34px">سُبْحَانَ اللَّهِ</div>
+        <div class="trans">Glory be to Allah.</div>
+        <div class="counter">
+          <div class="cnum">17 / 33</div>
+          <div class="cbar"><i style="width:51%"></i></div>
+          <div class="ctap">Tap to count</div>
+        </div>
+      </div>
+      <div class="dock">
+        <div class="app" style="background:linear-gradient(150deg,#5ac8fa,#0a84ff)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#ff9f0a,#ff375f)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#30d158,#248a3d)"></div>
+        <div class="app" style="background:linear-gradient(150deg,#bf5af2,#5e5ce6)"></div>
+        <div class="app moon"><svg viewBox="0 0 24 24" style="color:#f4d79b"><use href="#moon"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 3 · MENU BAR ========================= -->
+<section class="shot" id="menubar">
+  <div class="copy">
+    <h1>Always there.<br><em>Never</em> in the way</h1>
+    <p>Dhikr lives in your menu bar with no Dock icon and no clutter. Show one now, or pause reminders whenever you need quiet.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop">
+      <div class="moonglow"></div>
+      <div class="menubar">
+        <span class="mb-app">Finder</span>
+        <span class="mb-menus"><span>File</span><span>Edit</span><span>View</span><span>Go</span></span>
+        <span class="mb-right">
+          <svg width="16" height="12" viewBox="0 0 24 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2 5a15 15 0 0 1 20 0"/><path d="M5.5 9a10 10 0 0 1 13 0"/><path d="M9 12.6a5 5 0 0 1 6 0"/><circle cx="12" cy="15.4" r="1.3" fill="#fff" stroke="none"/></svg>
+          <svg width="25" height="12" viewBox="0 0 26 13"><rect x="1" y="1" width="21" height="11" rx="3" fill="none" stroke="#fff" stroke-opacity=".6"/><rect x="3" y="3" width="14" height="7" rx="1.4" fill="#fff"/><rect x="23.5" y="4.6" width="2" height="3.8" rx="1" fill="#fff" fill-opacity=".55"/></svg>
+          <span class="mb-status sel"><svg width="15" height="15" viewBox="0 0 24 24" style="color:#fff"><use href="#moon"/></svg></span>
+          <span style="font-weight:500">Wed 9:41</span>
+        </span>
+      </div>
+      <div class="macmenu" style="top:30px;right:58px">
+        <div class="mi hl">Show a Dhikr Now</div>
+        <div class="sep"></div>
+        <div class="mi">Pause Reminders</div>
+        <div class="mi">Settings…<span class="kbd">⌘,</span></div>
+        <div class="sep"></div>
+        <div class="mi">Quit Dhikr<span class="kbd">⌘Q</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 4 · SETTINGS ========================= -->
+<section class="shot" id="settings">
+  <div class="copy">
+    <h1>Set your own <em>rhythm</em></h1>
+    <p>Choose how often a dhikr appears, how it's picked, and which screen and corner it shows in — then forget it's there.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop"><div class="moonglow"></div>
+      <div class="window" style="top:30px;left:294px;width:600px">
+        <div class="titlebar">
+          <div class="lights"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <div class="tabs">
+            <div class="tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>General</div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20s2-1 4-3l8.5-8.5a2 2 0 0 0-3-3L5 14c-2 2-3 4-3 4z"/><path d="M14 6l4 4"/></svg>Appearance</div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M18 16H7a2 2 0 0 0-2 2"/></svg>Adhkar</div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>About</div>
+          </div>
+        </div>
+        <div class="wbody">
+          <div class="sec"><div class="lbl">Reminders</div><div class="group">
+            <div class="row"><span class="rl">Interval: every 30 min</span><span class="rr"><span class="stepper"><span>−</span><span>+</span></span></span></div>
+            <div class="row"><span class="rl">Pause Reminders</span><span class="rr"><span class="sw"></span></span></div>
+            <div class="row"><span class="rl">Selection method</span><span class="rr"><span class="pill">Shuffled (balanced) <span class="chev">⌄</span></span></span></div>
+            <div class="row"><span class="rl">Match time of day (morning / evening)</span><span class="rr"><span class="sw on"></span></span></div>
+          </div></div>
+          <div class="sec"><div class="lbl">Display</div><div class="group">
+            <div class="row"><span class="rl">Screen</span><span class="rr"><span class="pill">Screen with the cursor <span class="chev">⌄</span></span></span></div>
+          </div></div>
+          <div class="sec" style="margin-bottom:0"><div class="lbl">Startup</div><div class="group">
+            <div class="row"><span class="rl">Launch at login</span><span class="rr"><span class="sw on"></span></span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 5 · LIBRARY ========================= -->
+<section class="shot" id="library">
+  <div class="copy">
+    <h1>Your adhkar, <em>your</em> way</h1>
+    <p>Enable what speaks to you from the built-in collection, adjust the font and translation, or add remembrances of your own.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop"><div class="moonglow"></div>
+      <div class="window" style="top:30px;left:314px;width:560px">
+        <div class="titlebar">
+          <div class="lights"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <div class="tabs">
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>General</div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20s2-1 4-3l8.5-8.5a2 2 0 0 0-3-3L5 14c-2 2-3 4-3 4z"/><path d="M14 6l4 4"/></svg>Appearance</div>
+            <div class="tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M18 16H7a2 2 0 0 0-2 2"/></svg>Adhkar</div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>About</div>
+          </div>
+        </div>
+        <div class="wbody lib" style="padding:14px 16px">
+          <div class="sec" style="margin-bottom:12px"><div class="lbl">General</div><div class="group">
+            <div class="lrow"><span class="sw mini on"></span><span class="lar">سُبْحَانَ اللَّهِ</span><span class="badge">Built-in ×33</span><span class="ico">⧉</span></div>
+            <div class="lrow"><span class="sw mini on"></span><span class="lar">الْحَمْدُ لِلَّهِ</span><span class="badge">Built-in ×33</span><span class="ico">⧉</span></div>
+            <div class="lrow"><span class="sw mini"></span><span class="lar">اللَّهُ أَكْبَرُ</span><span class="badge">Built-in ×34</span><span class="ico">⧉</span></div>
+            <div class="lrow"><span class="sw mini on"></span><span class="lar">أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ</span><span class="badge">Built-in ×3</span><span class="ico">⧉</span></div>
+          </div></div>
+          <div class="sec" style="margin-bottom:0"><div class="lbl">My adhkar</div><div class="group">
+            <div class="lrow"><span class="sw mini on"></span><span class="lar">اللَّهُمَّ اجْعَلْنِي مِنَ الذَّاكِرِينَ</span><span class="badge">×7</span><span class="ico">✎</span><span class="ico">🗑</span></div>
+          </div></div>
+          <div class="libbar">
+            <span class="btn">＋ Add Dhikr</span>
+            <span class="btn red">Reset…</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 6 · BILINGUAL / RTL ========================= -->
+<section class="shot" id="bilingual">
+  <div class="copy">
+    <h1><em>العربية</em> &amp; English</h1>
+    <p>A fully right-to-left Arabic interface, or English — switch the whole app with one tap. Transliteration and translation optional.</p>
+  </div>
+  <div class="canvas">
+    <div class="desktop"><div class="moonglow"></div>
+      <div class="window rtl" style="top:34px;left:334px;width:520px">
+        <div class="titlebar">
+          <div class="lights"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <div class="tabs">
+            <div class="tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg><span style="font-family:var(--ar)">عام</span></div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20s2-1 4-3l8.5-8.5a2 2 0 0 0-3-3L5 14c-2 2-3 4-3 4z"/><path d="M14 6l4 4"/></svg><span style="font-family:var(--ar)">المظهر</span></div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M18 16H7a2 2 0 0 0-2 2"/></svg><span style="font-family:var(--ar)">الأذكار</span></div>
+            <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span style="font-family:var(--ar)">حول</span></div>
+          </div>
+        </div>
+        <div class="wbody" style="font-family:var(--ar)">
+          <div class="sec"><div class="lbl">التذكير</div><div class="group">
+            <div class="row"><span class="rl">الفاصل الزمني: كل 30 دقيقة</span><span class="rr"><span class="stepper"><span>＋</span><span>−</span></span></span></div>
+            <div class="row"><span class="rl">طريقة الاختيار</span><span class="rr"><span class="pill"><span class="chev">⌄</span> عشوائي متوازن</span></span></div>
+            <div class="row"><span class="rl">الاختيار حسب وقت اليوم (صباح/مساء)</span><span class="rr"><span class="sw on"></span></span></div>
+          </div></div>
+          <div class="sec"><div class="lbl">بدء التشغيل</div><div class="group">
+            <div class="row"><span class="rl">التشغيل عند تسجيل الدخول</span><span class="rr"><span class="sw on"></span></span></div>
+          </div></div>
+          <div class="sec" style="margin-bottom:0"><div class="lbl">اللغة</div><div class="group">
+            <div class="row"><span class="rl">اللغة</span><span class="rr"><span class="seg"><span class="on">العربية</span><span>English</span></span></span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

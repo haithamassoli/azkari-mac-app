@@ -11,6 +11,7 @@ final class ToastModel {
     let showTranslation: Bool
     let counterEnabled: Bool
     let language: AppLanguage
+    let adhkarInEnglish: Bool
 
     var count: Int = 0
     var isComplete: Bool = false
@@ -28,7 +29,15 @@ final class ToastModel {
         self.showTranslation = prefs.showTranslation
         self.counterEnabled = prefs.counterEnabled
         self.language = prefs.language
+        self.adhkarInEnglish = prefs.adhkarInEnglish
     }
+
+    /// Main card text. In English mode show the transliteration (e.g. "Al-ḥamdu
+    /// lillāh"), falling back to Arabic for a custom dhikr that has none.
+    var primaryText: String { dhikr.displayText(english: adhkarInEnglish) }
+
+    /// The transliteration line is redundant when it's already the main text.
+    var showsTransliterationLine: Bool { showTransliteration && !adhkarInEnglish }
 
     var target: Int { max(1, dhikr.repeatCount) }
     var showsCounter: Bool { counterEnabled && dhikr.repeatCount > 1 }
@@ -55,13 +64,13 @@ struct DhikrToastView: View {
         VStack(alignment: .center, spacing: 12) {
             header
 
-            Text(model.dhikr.arabicText)
+            Text(model.primaryText)
                 .font(.system(size: model.fontSize, weight: .medium))
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
                 .lineSpacing(6)
 
-            if model.showTransliteration, let t = model.dhikr.transliteration, !t.isEmpty {
+            if model.showsTransliterationLine, let t = model.dhikr.transliteration, !t.isEmpty {
                 Text(t)
                     .font(.callout)
                     .foregroundStyle(.secondary)

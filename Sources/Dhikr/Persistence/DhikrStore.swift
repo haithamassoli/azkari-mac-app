@@ -60,7 +60,7 @@ final class DhikrStore {
                   source: s.source,
                   repeatCount: s.repeatCount ?? 1,
                   category: s.category,
-                  isEnabled: true,
+                  isEnabled: s.category == .general, // ponytail: only General on by default; rest opt-in
                   isBuiltIn: true,
                   sortOrder: index)
         }

@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ذِكر — الذِّكرُ يُنسَجُ بلُطفٍ في يومك</title>
+<meta name="description" content="رفيقٌ في شريط قوائم ماك يُظهر ذكرًا لطيفًا في زاوية شاشتك حسب الفاصل الذي تختاره، ثم يختفي وحده. خصوصيةٌ تامة، وبلا إنترنت، ومجانًا.">
+<meta name="theme-color" content="#061420">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-256.png">
+
+<!-- language alternates -->
+<link rel="alternate" hreflang="ar" href="ar.html">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ذِكر — الذِّكرُ يُنسَجُ بلُطفٍ في يومك">
+<meta property="og:description" content="رفيقٌ لطيفٌ للأذكار في شريط قوائم ماك. خصوصيةٌ تامة، بلا إنترنت، ومجانًا.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/01-hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+<style>
+/* --- Arabic type system: Reem Kufi for display, Amiri for body + sacred text --- */
+:root{
+  --serif:"Reem Kufi","Amiri",sans-serif;
+  --sans:"Amiri","SF Arabic","Geeza Pro","Al Bayan",serif;
+  --ar:"Amiri","SF Arabic","Geeza Pro","Al Bayan",serif;
+}
+/* letter-spacing breaks Arabic cursive joining — reset everywhere it was set */
+.eyebrow,.hour .tag,.serif,.brand,.cell h3,.btn,.nav .lang{letter-spacing:normal}
+.em{font-style:normal;font-weight:700}              /* italic isn't idiomatic in Arabic; keep the gold */
+.hero h1,.head h2,.final h2{font-weight:600}
+.hero h1{line-height:1.4}
+.head h2,.final h2{line-height:1.45}
+.serif{line-height:1.3}
+.hour .ar,.tcard .ar{line-height:1.95}              /* room for harakāt */
+.zero b{font-family:"Reem Kufi",var(--ar);font-weight:700;font-size:clamp(2.6rem,6vw,3.9rem);line-height:1.15}
+</style>
+</head>
+<body>
+<a class="skip" href="#download">تخطَّ إلى التحميل</a>
+
+<!-- reusable crescent glyph (moon + 2 stars) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="moon">
+    <path d="M20.5 13.2A8.2 8.2 0 1 1 10.6 3.4 6.6 6.6 0 0 0 20.5 13.2Z" fill="currentColor"/>
+    <path d="M18.4 2.2l.62 1.74 1.74.62-1.74.62-.62 1.74-.62-1.74-1.74-.62 1.74-.62z" fill="currentColor"/>
+    <path d="M21.7 6.4l.4 1.12 1.12.4-1.12.4-.4 1.12-.4-1.12-1.12-.4 1.12-.4z" fill="currentColor"/>
+  </g>
+</defs></svg>
+
+<!-- ================================================================ NAV -->
+<header class="nav" id="nav">
+  <div class="wrap row">
+    <a class="brand" href="#top" aria-label="ذِكر، الصفحة الرئيسية">
+      <img class="mk" src="assets/icon.png" alt="" width="30" height="30">
+      ذِكر
+    </a>
+    <nav class="links" aria-label="التنقّل">
+      <a href="#hours">الأوقات</a>
+      <a href="#features">الميزات</a>
+      <a href="#private">الخصوصية</a>
+    </nav>
+    <a class="lang" href="index.html" hreflang="en" lang="en" aria-label="Switch to English">English</a>
+    <a class="btn btn-gold dl" href="Dhikr.dmg" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+      التحميل
+    </a>
+  </div>
+</header>
+
+<div class="sky" aria-hidden="true"></div>
+<div class="stars" aria-hidden="true"></div>
+
+<main id="top">
+<!-- =============================================================== HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap grid">
+    <div class="txt">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>رفيقٌ في شريط قوائم ماك</span>
+      <h1 class="serif" id="h1">الذِّكرُ يُنسَجُ<br><span class="em">بلُطفٍ</span> في يومك</h1>
+      <p class="lede">يُظهر «ذِكر» ذكرًا واحدًا في زاوية شاشتك حسب الفاصل الذي تختاره، ثم يختفي وحده — بلا نافذةٍ تُديرها، وبلا إشعارٍ تُغلقه.</p>
+      <div class="cta">
+        <a class="btn btn-gold btn-lg" href="Dhikr.dmg" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+          التحميل لنظام ماك
+        </a>
+        <a class="btn btn-ghost" href="#features">كيف يعمل</a>
+      </div>
+      <p class="fine"><b>مجانًا</b> &nbsp;·&nbsp; <bdi>.dmg</bdi> عام &nbsp;·&nbsp; <bdi>macOS 14 Sonoma</bdi> أو أحدث</p>
+    </div>
+
+    <div>
+      <figure class="demo" aria-label="معاينة حيّة: «ذِكر» يُظهر ذكرًا في زاوية شاشة ماك">
+        <div class="glowpad" aria-hidden="true"></div>
+        <div class="mac" dir="ltr" aria-hidden="true">
+          <div class="moonglow"></div>
+          <div class="mbar">
+            <span class="app">Pages</span>
+            <span class="mn"><span>File</span><span>Edit</span><span>Insert</span><span>Format</span></span>
+            <span class="rt">
+              <svg viewBox="0 0 24 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2 5a15 15 0 0 1 20 0"/><path d="M5.5 9a10 10 0 0 1 13 0"/><path d="M9 12.6a5 5 0 0 1 6 0"/><circle cx="12" cy="15.4" r="1.3" fill="#fff" stroke="none"/></svg>
+              <span class="micon"><svg viewBox="0 0 24 24"><use href="#moon"/></svg></span>
+              <span style="font-size:2cqw;font-weight:500">Wed 9:41</span>
+            </span>
+          </div>
+          <div class="tcard" id="tcard">
+            <div class="hd"><span class="src" id="t-src"></span><span class="x">✕</span></div>
+            <div class="ar" id="t-ar"></div>
+          </div>
+          <div class="dock">
+            <i style="background:linear-gradient(150deg,#5ac8fa,#0a84ff)"></i>
+            <i style="background:linear-gradient(150deg,#ff9f0a,#ff375f)"></i>
+            <i style="background:linear-gradient(150deg,#30d158,#248a3d)"></i>
+            <i style="background:linear-gradient(150deg,#bf5af2,#5e5ce6)"></i>
+            <i class="moon"><svg viewBox="0 0 24 24"><use href="#moon"/></svg></i>
+          </div>
+        </div>
+        <figcaption class="summon">
+          <button id="summon" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>
+            أظهِر ذِكرًا الآن
+          </button>
+          <span class="hint">— كإجراء شريط القوائم تمامًا</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== THE HOURS -->
+<section class="band" id="hours" aria-labelledby="hours-h">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>أذكار الصباح والمساء، في وقتها</span>
+      <h2 class="serif" id="hours-h">يعرفُ الساعةَ<br>التي <span class="em">أنت</span> فيها</h2>
+      <p>فعِّل المطابقة حسب وقت اليوم، فيميل «ذِكر» إلى أذكار الصباح بعد الفجر، وأذكار المساء مع اقتراب المغرب — الكلماتُ المناسبةُ في وقتها، دون أن تُفكِّر في الأمر.</p>
+    </div>
+    <div class="hours">
+      <div class="hour dawn reveal">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="14" r="4"/><path d="M12 3v3M4.5 8.5 6 10M19.5 8.5 18 10M2 18h20"/></svg>الصباح</span>
+        <p class="ar">أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ</p>
+        <p class="en">«أصبحنا وأصبح المُلكُ لله» — من أذكار الصباح، صحيح مسلم.</p>
+        <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+      </div>
+      <div class="hour dusk reveal">
+        <span class="tag"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>المساء</span>
+        <p class="ar">أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ</p>
+        <p class="en">«أمسينا وأمسى المُلكُ لله» — من أذكار المساء، صحيح مسلم.</p>
+        <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== FEATURES -->
+<section class="band" id="features" aria-labelledby="feat-h">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>طوعُ يديك</span>
+      <h2 class="serif" id="feat-h">هادئٌ بطبعه،<br>كما تُحبُّه تمامًا</h2>
+      <p>كلُّ شيءٍ في تطبيقٍ صغيرٍ بشريط القوائم — بلا أيقونةٍ في الـ<bdi>Dock</bdi>، وبلا نافذةٍ تحتفظ بها. اضبطه مرّةً، ودَعْه يصير جزءًا من المكان.</p>
+    </div>
+
+    <div class="bento">
+      <!-- menu bar -->
+      <article class="cell c-wide c-tall reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="4" rx="1.5"/><path d="M17 6h.01"/><rect x="2" y="11" width="20" height="9" rx="2"/></svg></div>
+        <h3>يسكن في شريط القوائم</h3>
+        <p>هلالٌ صغيرٌ بجوار الساعة. أظهِر ذكرًا الآن، أو أوقِف التذكير مؤقتًا حين تريد الهدوء، أو افتح الإعدادات — بلا أيقونة، ولا شيء تُديره.</p>
+        <div class="shot"><img src="assets/app-menubar.png" alt="قائمة «ذِكر» في شريط القوائم: أظهِر ذكرًا الآن، إيقاف التذكير، الإعدادات، إنهاء" loading="lazy" width="1188" height="582"></div>
+      </article>
+
+      <!-- tasbeeh interactive -->
+      <article class="cell c-span2 tasbeeh reveal" aria-labelledby="tas-h">
+        <div class="ic" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="6" cy="7" r="2.4"/><circle cx="12" cy="5.4" r="2.4"/><circle cx="18" cy="7" r="2.4"/><path d="M4 12c2 5 4 7 8 7s6-2 8-7"/></svg></div>
+        <h3 id="tas-h" style="margin-bottom:.3rem">عُدَّ تسبيحك</h3>
+        <p class="ar">سُبْحَانَ اللَّهِ</p>
+        <div class="cnt"><span id="tcount">٠</span> <small>/ ٣٣</small></div>
+        <div class="beadbar"><i id="tbar"></i></div>
+        <button class="tap" id="tbtn" type="button">اضغط للعدّ</button>
+        <div class="done" id="tdone" role="status" aria-live="polite"></div>
+      </article>
+
+      <!-- rhythm -->
+      <article class="cell c-span3 reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg></div>
+        <h3>أنشئ إيقاعك الخاص</h3>
+        <p>كل ١٥ أو ٣٠ أو ٦٠ أو ١٢٠ دقيقة — أو أيَّ فاصلٍ من ١ إلى ٢٤٠. خلطٌ متوازنٌ فلا يتكرّر الذكر سريعًا، ونغمةٌ خفيفةٌ إن شئت.</p>
+        <div class="shot"><img src="assets/app-settings.png" alt="إعدادات «ذِكر»: الفاصل كل ٣٠ دقيقة، طريقة الاختيار، المطابقة حسب وقت اليوم، التشغيل عند الدخول" loading="lazy" width="1188" height="582"></div>
+      </article>
+
+      <!-- library -->
+      <article class="cell c-span3 reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M18 16H7a2 2 0 0 0-2 2"/></svg></div>
+        <h3>عشرون ذِكرًا، أو أذكارُك</h3>
+        <p>مجموعةٌ مضمّنةٌ من المأثور المشهور — لكلٍّ نقحرةٌ وترجمةٌ ومصدر. فعِّل ما يوافقك، وعدِّل أيًّا منها، أو أضِف أذكارك.</p>
+        <div class="shot"><img src="assets/app-library.png" alt="مكتبة أذكار «ذِكر» مع مفاتيح التفعيل والتكرار والتعديل وإضافة ذكر" loading="lazy" width="1188" height="582"></div>
+      </article>
+
+      <!-- corner -->
+      <article class="cell c-span2 reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><rect x="13.5" y="6.5" width="6" height="5" rx="1.2" fill="currentColor" stroke="none" opacity=".7"/></svg></div>
+        <h3>زاويتُك، وشاشتُك</h3>
+        <p>اختر الزاوية التي يظهر فيها، ومدّة بقائه، وحجم الخط، والشاشة على مكتبٍ متعدّد الشاشات.</p>
+      </article>
+
+      <!-- login -->
+      <article class="cell c-span2 reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 4h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-8"/><path d="M13 12H3m0 0 4-4m-4 4 4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>حاضرٌ دائمًا عند الدخول</h3>
+        <p>يبدأ بهدوءٍ مع تشغيل الماك — حاضرٌ ببساطة، دون أن يطلب انتباهك.</p>
+      </article>
+
+      <!-- authentic sourcing -->
+      <article class="cell c-span2 reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 4 6v5c0 4 3.4 7.4 8 9 4.6-1.6 8-5 8-9V6z"/><path d="m8.7 11.6 2.2 2.2 4.4-4.9" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>لكلِّ ذِكرٍ مصدرُه</h3>
+        <p>يحمل كلُّ ذكرٍ إسنادَه — متفق عليه، صحيح مسلم، البخاري — فتعرف دائمًا من أين جاء.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== PRIVACY -->
+<section class="band privacy" id="private" aria-labelledby="priv-h">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow" style="justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg>خصوصيةٌ بالتصميم</span>
+      <h2 class="serif" id="priv-h">لا شيءَ يغادر جهازك</h2>
+    </div>
+    <div class="zeros">
+      <div class="zero reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+        <b>لا</b><span>حساب أو تسجيل دخول</span>
+      </div>
+      <div class="zero reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 12a11 11 0 0 1 16 0"/><path d="M7.4 15.4a6 6 0 0 1 9.2 0"/><circle cx="12" cy="19" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <b>لا</b><span>اتصال بالشبكة</span>
+      </div>
+      <div class="zero reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.6"/></svg>
+        <b>لا</b><span>تتبّع أو تحليلات</span>
+      </div>
+    </div>
+    <p class="note">«ذِكر» بلا أيّ اتصالٍ بالإنترنت، ولا جمعَ لأيّ بياناتٍ من أيّ نوع — أذكارُك وإعداداتُك تبقى على جهازك، وعلى جهازك وحده.</p>
+  </div>
+</section>
+
+<!-- ====================================================== BILINGUAL -->
+<section class="band bi" aria-labelledby="bi-h">
+  <div class="wrap grid">
+    <div class="head reveal" style="max-width:none">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#moon"/></svg>الاتجاهان معًا</span>
+      <h2 class="serif" id="bi-h">العربية والإنجليزية</h2>
+      <p>واجهةٌ عربيةٌ كاملةٌ من اليمين إلى اليسار، أو الإنجليزية — بدِّل التطبيق كلَّه بلمسة. والنقحرةُ والترجمةُ خيارُك، فتُظهِر البطاقةُ ما تريده تمامًا، لا أكثر.</p>
+    </div>
+    <div class="shot reveal"><img src="assets/app-bilingual.png" alt="إعدادات «ذِكر» بواجهةٍ عربيةٍ كاملةٍ من اليمين إلى اليسار" loading="lazy" width="1188" height="582"></div>
+  </div>
+</section>
+
+<!-- ====================================================== FINAL CTA -->
+<section class="final" id="download">
+  <div class="wrap">
+    <div class="card reveal">
+      <img class="moonmark" src="assets/icon.png" alt="" width="64" height="64">
+      <h2 class="serif">ابدأ نوعًا أهدأ<br>من الذِّكر</h2>
+      <p>حمِّل «ذِكر»، ودَعْ ذكرًا لطيفًا يجدك، زاويةً إثر زاوية، طوال اليوم.</p>
+      <a class="btn btn-gold btn-lg" href="Dhikr.dmg" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+        التحميل لنظام ماك
+      </a>
+      <p class="fine">مجانًا &nbsp;·&nbsp; <bdi>.dmg</bdi> عام &nbsp;·&nbsp; <bdi>macOS 14 Sonoma</bdi> أو أحدث &nbsp;·&nbsp; © ٢٠٢٦ هيثم عسولي</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div>
+      <a class="brand" href="#top"><img class="mk" src="assets/icon.png" alt="" width="30" height="30">ذِكر</a>
+      <p class="meta">رفيقٌ صغيرٌ خاصٌّ للذِّكر — صُنِع كهديةٍ هادئة. بلا حسابات، ولا شبكة، ولا تتبّع.</p>
+    </div>
+    <nav class="lk" aria-label="التذييل">
+      <a href="#features">الميزات</a>
+      <a href="#private">الخصوصية</a>
+      <a href="index.html" hreflang="en" lang="en">English</a>
+      <a href="Dhikr.dmg" download>التحميل</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- nav glass on scroll ---- */
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 12);
+  onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---- reveal on view ---- */
+  const revs = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    revs.forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((es) => {
+      es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.16, rootMargin:'0px 0px -8% 0px'});
+    revs.forEach(el => io.observe(el));
+  }
+
+  /* ---- hero: real adhkar fading into the corner (Arabic + source only) ---- */
+  const ADHKAR = [
+    {src:'متفق عليه', ar:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ،\nسُبْحَانَ اللَّهِ الْعَظِيمِ'},
+    {src:'تهليل — متفق عليه', ar:'لَا إِلَٰهَ إِلَّا اللَّهُ\nوَحْدَهُ لَا شَرِيكَ لَهُ'},
+    {src:'أذكار الصباح — صحيح مسلم', ar:'أَصْبَحْنَا وَأَصْبَحَ\nالْمُلْكُ لِلَّهِ'},
+    {src:'استغفار — صحيح مسلم', ar:'أَسْتَغْفِرُ اللَّهَ\nوَأَتُوبُ إِلَيْهِ'},
+    {src:'صحيح مسلم', ar:'أَعُوذُ بِكَلِمَاتِ اللَّهِ\nالتَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ'},
+  ];
+  const card = document.getElementById('tcard');
+  const elSrc = document.getElementById('t-src'), elAr = document.getElementById('t-ar');
+  let idx = -1, timer = null;
+
+  function paint(i){ const d = ADHKAR[i]; elSrc.textContent = d.src; elAr.textContent = d.ar; }
+  function present(next){
+    idx = (next ?? idx + 1) % ADHKAR.length;
+    if (reduce){ paint(idx); card.classList.add('in'); return; }
+    card.classList.remove('in','out');
+    void card.offsetWidth;
+    paint(idx);
+    card.classList.add('in');
+  }
+  function cycle(){
+    if (reduce) return;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      card.classList.remove('in'); card.classList.add('out');
+      setTimeout(() => { present(); cycle(); }, 780);
+    }, 5200);
+  }
+  present(0); cycle();
+
+  document.getElementById('summon').addEventListener('click', () => {
+    clearTimeout(timer);
+    if (reduce){ present(); return; }
+    card.classList.remove('in'); card.classList.add('out');
+    setTimeout(() => { present(); cycle(); }, 420);
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) clearTimeout(timer); else cycle();
+  });
+
+  /* ---- interactive tasbeeh counter (Arabic-Indic numerals) ---- */
+  const TARGET = 33, ar = (x) => x.toLocaleString('ar-EG');
+  let n = 0;
+  const cEl = document.getElementById('tcount'), bar = document.getElementById('tbar'),
+        btn = document.getElementById('tbtn'), done = document.getElementById('tdone');
+  btn.addEventListener('click', () => {
+    n = n >= TARGET ? 0 : n + 1;
+    cEl.textContent = ar(n);
+    bar.style.width = (n / TARGET * 100) + '%';
+    done.textContent = n >= TARGET ? '✓ تمّ — اضغط للبدء من جديد' : '';
+  });
+})();
+</script>
+</body>
+</html>

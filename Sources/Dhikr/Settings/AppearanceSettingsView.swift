@@ -28,11 +28,14 @@ struct AppearanceSettingsView: View {
                     Text(app.prefs.language.tr(.fontSizeLabel, Int(prefs.fontSize)))
                     Slider(value: $prefs.fontSize, in: 16...48, step: 1)
                 }
-                Toggle(app.prefs.language.tr(.showTransliteration), isOn: $prefs.showTransliteration)
+                Toggle(app.prefs.language.tr(.adhkarInEnglish), isOn: $prefs.adhkarInEnglish)
+                if !prefs.adhkarInEnglish {
+                    Toggle(app.prefs.language.tr(.showTransliteration), isOn: $prefs.showTransliteration)
+                }
                 Toggle(app.prefs.language.tr(.showTranslation), isOn: $prefs.showTranslation)
                 Toggle(app.prefs.language.tr(.showCounter), isOn: $prefs.counterEnabled)
 
-                Text("سُبْحَانَ اللَّهِ وَبِحَمْدِهِ")
+                Text(prefs.adhkarInEnglish ? "Subḥān Allāhi wa biḥamdih" : "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ")
                     .font(.system(size: prefs.fontSize, weight: .medium))
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding(.vertical, 6)

@@ -55,6 +55,13 @@ struct Dhikr: Identifiable, Codable, Hashable, Sendable {
         isBuiltIn = try c.decodeIfPresent(Bool.self, forKey: .isBuiltIn) ?? false
         sortOrder = try c.decodeIfPresent(Int.self, forKey: .sortOrder) ?? 0
     }
+
+    /// Main display text: the transliteration when `english` is on and present,
+    /// else the Arabic. Shared by the popup card and the library list.
+    func displayText(english: Bool) -> String {
+        guard english, let t = transliteration, !t.isEmpty else { return arabicText }
+        return t
+    }
 }
 
 /// Shape of the bundled seed file `Resources/adhkar.json`.

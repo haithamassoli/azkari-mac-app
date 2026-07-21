@@ -61,6 +61,8 @@ struct GeneralSettingsView: View {
                 }
                 .pickerStyle(.segmented)
                 .labelsHidden()
+
+                Toggle(app.prefs.language.tr(.adhkarInEnglish), isOn: $prefs.adhkarInEnglish)
             }
         }
         .formStyle(.grouped)

@@ -29,6 +29,13 @@ struct OnboardingView: View {
                 header(lang)
                 interval(lang)
                 Toggle(lang.tr(.timeAware), isOn: $prefs.timeAwareEnabled)
+                Toggle(lang.tr(.showCounter), isOn: $prefs.counterEnabled)
+                Toggle(lang.tr(.adhkarInEnglish), isOn: $prefs.adhkarInEnglish)
+                if !prefs.adhkarInEnglish {
+                    Toggle(lang.tr(.showTransliteration), isOn: $prefs.showTransliteration)
+                }
+                Toggle(lang.tr(.showTranslation), isOn: $prefs.showTranslation)
+                Toggle(lang.tr(.playSoundOnShow), isOn: $prefs.soundEnabled)
                 launchAtLogin(lang)
                 adhkar(lang)
                 actions(lang)

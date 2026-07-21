@@ -16,7 +16,12 @@ struct LibrarySettingsView: View {
     @State private var confirmReset = false
 
     var body: some View {
+        @Bindable var prefs = app.prefs
         VStack(spacing: 0) {
+            Toggle(app.prefs.language.tr(.adhkarInEnglish), isOn: $prefs.adhkarInEnglish)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+            Divider()
             List {
                 ForEach(DhikrCategory.allCases) { category in
                     let items = app.store.adhkar.filter { $0.category == category }
@@ -76,7 +81,7 @@ struct LibrarySettingsView: View {
             .controlSize(.mini)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text(dhikr.arabicText)
+                Text(dhikr.displayText(english: app.prefs.adhkarInEnglish))
                     .font(.system(size: 15))
                     .lineLimit(1)
                 HStack(spacing: 6) {

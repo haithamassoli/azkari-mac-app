@@ -15,6 +15,7 @@ enum DefaultsKeys {
     static let timeAwareEnabled   = "timeAwareEnabled"
     static let counterEnabled     = "counterEnabled"
     static let language           = "language"
+    static let adhkarInEnglish    = "adhkarInEnglish"
     static let hasOnboarded       = "hasOnboarded"
 }
 
@@ -38,22 +39,26 @@ final class Preferences {
     /// UI language. Defaults to the system language (falling back to Arabic) until
     /// the user picks one, then persists their choice.
     var language: AppLanguage { didSet { d.set(language.rawValue, forKey: DefaultsKeys.language) } }
+    /// When on, the popup shows each dhikr's transliteration (e.g. "Al-ḥamdu lillāh")
+    /// as the main text instead of the Arabic. Independent of the UI `language`.
+    var adhkarInEnglish: Bool { didSet { d.set(adhkarInEnglish, forKey: DefaultsKeys.adhkarInEnglish) } }
 
     private let d = UserDefaults.standard
 
     init() {
         d.register(defaults: [
-            DefaultsKeys.intervalMinutes: 30,
+            DefaultsKeys.intervalMinutes: 5,
             DefaultsKeys.displayDuration: 15.0,
             DefaultsKeys.corner: ScreenCorner.topRight.rawValue,
             DefaultsKeys.selectionMode: SelectionMode.shuffledBag.rawValue,
             DefaultsKeys.screenMode: ScreenMode.withCursor.rawValue,
             DefaultsKeys.fontSize: 28.0,
             DefaultsKeys.showTransliteration: false,
-            DefaultsKeys.showTranslation: true,
-            DefaultsKeys.soundEnabled: true,
-            DefaultsKeys.timeAwareEnabled: true,
-            DefaultsKeys.counterEnabled: true,
+            DefaultsKeys.showTranslation: false,
+            DefaultsKeys.soundEnabled: false,
+            DefaultsKeys.timeAwareEnabled: false,
+            DefaultsKeys.counterEnabled: false,
+            DefaultsKeys.adhkarInEnglish: false,
         ])
         // Initial assignment in init does not trigger didSet, so this reads
         // without writing back.
@@ -68,6 +73,7 @@ final class Preferences {
         soundEnabled       = d.bool(forKey: DefaultsKeys.soundEnabled)
         timeAwareEnabled   = d.bool(forKey: DefaultsKeys.timeAwareEnabled)
         counterEnabled     = d.bool(forKey: DefaultsKeys.counterEnabled)
+        adhkarInEnglish    = d.bool(forKey: DefaultsKeys.adhkarInEnglish)
         // No static default (the fallback is dynamic): use the stored choice, else the system language.
         language           = d.string(forKey: DefaultsKeys.language).flatMap(AppLanguage.init(rawValue:)) ?? .systemDefault
     }
