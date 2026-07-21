@@ -22,20 +22,20 @@ struct DhikrEditorView: View {
     var body: some View {
         VStack(spacing: 0) {
             Form {
-                Section("النص") {
-                    TextField("النص العربي", text: $working.arabicText, axis: .vertical)
+                Section(app.prefs.language.tr(.sectionText)) {
+                    TextField(app.prefs.language.tr(.arabicTextField), text: $working.arabicText, axis: .vertical)
                         .lineLimit(2...6)
                         .font(.title3)
                 }
 
-                Section("تفاصيل (اختياري)") {
-                    TextField("النقحرة", text: optionalBinding(\.transliteration))
-                    TextField("الترجمة", text: optionalBinding(\.translation))
-                    TextField("المصدر", text: optionalBinding(\.source))
-                    Stepper("عدد التكرار: \(working.repeatCount)", value: $working.repeatCount, in: 1...1000)
-                    Picker("التصنيف", selection: $working.category) {
+                Section(app.prefs.language.tr(.sectionOptionalDetails)) {
+                    TextField(app.prefs.language.tr(.transliterationField), text: optionalBinding(\.transliteration))
+                    TextField(app.prefs.language.tr(.translationField), text: optionalBinding(\.translation))
+                    TextField(app.prefs.language.tr(.sourceField), text: optionalBinding(\.source))
+                    Stepper(app.prefs.language.tr(.repeatCountLabel, working.repeatCount), value: $working.repeatCount, in: 1...1000)
+                    Picker(app.prefs.language.tr(.categoryField), selection: $working.category) {
                         ForEach(DhikrCategory.allCases) { category in
-                            Text(category.arabicName).tag(category)
+                            Text(category.localizedName(app.prefs.language)).tag(category)
                         }
                     }
                 }
@@ -45,17 +45,18 @@ struct DhikrEditorView: View {
             Divider()
 
             HStack {
-                Button("إلغاء") { dismiss() }
+                Button(app.prefs.language.tr(.cancel)) { dismiss() }
                     .keyboardShortcut(.cancelAction)
                 Spacer()
-                Button(isNew ? "إضافة" : "حفظ") { save() }
+                Button(isNew ? app.prefs.language.tr(.add) : app.prefs.language.tr(.save)) { save() }
                     .keyboardShortcut(.defaultAction)
                     .disabled(!canSave)
             }
             .padding(12)
         }
         .frame(width: 460, height: 440)
-        .environment(\.layoutDirection, .rightToLeft)
+        .environment(\.layoutDirection, app.prefs.language.layoutDirection)
+        .environment(\.locale, app.prefs.language.locale)
     }
 
     private func optionalBinding(_ keyPath: WritableKeyPath<Dhikr, String?>) -> Binding<String> {

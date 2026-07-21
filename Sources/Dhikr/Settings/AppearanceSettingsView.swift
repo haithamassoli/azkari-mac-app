@@ -7,30 +7,30 @@ struct AppearanceSettingsView: View {
         @Bindable var prefs = app.prefs
 
         Form {
-            Section("الموضع") {
-                Picker("زاوية الظهور", selection: $prefs.corner) {
+            Section(app.prefs.language.tr(.sectionPosition)) {
+                Picker(app.prefs.language.tr(.cornerLabel), selection: $prefs.corner) {
                     ForEach(ScreenCorner.allCases) { corner in
-                        Text(corner.arabicName).tag(corner)
+                        Text(corner.localizedName(app.prefs.language)).tag(corner)
                     }
                 }
                 .pickerStyle(.menu)
             }
 
-            Section("المدّة") {
+            Section(app.prefs.language.tr(.sectionDuration)) {
                 VStack(alignment: .leading) {
-                    Text("مدّة الظهور: \(Int(prefs.displayDuration)) ثانية")
+                    Text(app.prefs.language.tr(.displayDurationSecs, Int(prefs.displayDuration)))
                     Slider(value: $prefs.displayDuration, in: 4...60, step: 1)
                 }
             }
 
-            Section("الخط والمحتوى") {
+            Section(app.prefs.language.tr(.sectionFontContent)) {
                 VStack(alignment: .leading) {
-                    Text("حجم الخط: \(Int(prefs.fontSize))")
+                    Text(app.prefs.language.tr(.fontSizeLabel, Int(prefs.fontSize)))
                     Slider(value: $prefs.fontSize, in: 16...48, step: 1)
                 }
-                Toggle("إظهار النقحرة (حروف لاتينية)", isOn: $prefs.showTransliteration)
-                Toggle("إظهار الترجمة", isOn: $prefs.showTranslation)
-                Toggle("إظهار عدّاد التسبيح (اضغط للعدّ)", isOn: $prefs.counterEnabled)
+                Toggle(app.prefs.language.tr(.showTransliteration), isOn: $prefs.showTransliteration)
+                Toggle(app.prefs.language.tr(.showTranslation), isOn: $prefs.showTranslation)
+                Toggle(app.prefs.language.tr(.showCounter), isOn: $prefs.counterEnabled)
 
                 Text("سُبْحَانَ اللَّهِ وَبِحَمْدِهِ")
                     .font(.system(size: prefs.fontSize, weight: .medium))
@@ -38,13 +38,13 @@ struct AppearanceSettingsView: View {
                     .padding(.vertical, 6)
             }
 
-            Section("الصوت") {
-                Toggle("تشغيل صوت عند الظهور", isOn: $prefs.soundEnabled)
-                Button("تجربة الصوت") { app.soundPlayer.playChime(enabled: true) }
+            Section(app.prefs.language.tr(.sectionSound)) {
+                Toggle(app.prefs.language.tr(.playSoundOnShow), isOn: $prefs.soundEnabled)
+                Button(app.prefs.language.tr(.testSound)) { app.soundPlayer.playChime(enabled: true) }
             }
 
             Section {
-                Button("معاينة التذكير الآن") { app.showNextDhikr(manual: true) }
+                Button(app.prefs.language.tr(.previewNow)) { app.showNextDhikr(manual: true) }
                     .disabled(app.enabledAdhkar.isEmpty)
             }
         }

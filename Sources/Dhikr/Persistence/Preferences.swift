@@ -14,6 +14,7 @@ enum DefaultsKeys {
     static let soundEnabled       = "soundEnabled"
     static let timeAwareEnabled   = "timeAwareEnabled"
     static let counterEnabled     = "counterEnabled"
+    static let language           = "language"
 }
 
 /// Observable, UserDefaults-backed settings. A single instance lives on `AppModel`
@@ -33,6 +34,9 @@ final class Preferences {
     var soundEnabled: Bool { didSet { d.set(soundEnabled, forKey: DefaultsKeys.soundEnabled) } }
     var timeAwareEnabled: Bool { didSet { d.set(timeAwareEnabled, forKey: DefaultsKeys.timeAwareEnabled) } }
     var counterEnabled: Bool { didSet { d.set(counterEnabled, forKey: DefaultsKeys.counterEnabled) } }
+    /// UI language. Defaults to the system language (falling back to Arabic) until
+    /// the user picks one, then persists their choice.
+    var language: AppLanguage { didSet { d.set(language.rawValue, forKey: DefaultsKeys.language) } }
 
     private let d = UserDefaults.standard
 
@@ -63,5 +67,7 @@ final class Preferences {
         soundEnabled       = d.bool(forKey: DefaultsKeys.soundEnabled)
         timeAwareEnabled   = d.bool(forKey: DefaultsKeys.timeAwareEnabled)
         counterEnabled     = d.bool(forKey: DefaultsKeys.counterEnabled)
+        // No static default (the fallback is dynamic): use the stored choice, else the system language.
+        language           = d.string(forKey: DefaultsKeys.language).flatMap(AppLanguage.init(rawValue:)) ?? .systemDefault
     }
 }

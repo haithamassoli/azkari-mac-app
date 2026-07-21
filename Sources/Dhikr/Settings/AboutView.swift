@@ -1,24 +1,26 @@
 import SwiftUI
 
 struct AboutView: View {
+    @Environment(AppModel.self) private var app
+
     var body: some View {
         VStack(spacing: 14) {
             Image(systemName: "moon.stars.fill")
                 .font(.system(size: 52))
                 .foregroundStyle(.tint)
 
-            Text("ذكر")
+            Text(app.prefs.language.tr(.appName))
                 .font(.largeTitle.bold())
 
-            Text("تطبيقٌ يعرض الأذكار بشكلٍ دوري في زاوية الشاشة.")
+            Text(app.prefs.language.tr(.aboutTagline))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
 
-            Text("الإصدار ١٫٠")
+            Text(app.prefs.language.tr(.aboutVersion))
                 .font(.caption)
                 .foregroundStyle(.secondary)
 
-            Text("الأذكار المضمّنة من المأثور المشهور، ويمكنك تعديلها وإضافة أذكارك الخاصة.")
+            Text(app.prefs.language.tr(.aboutBody))
                 .font(.caption)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
@@ -29,6 +31,7 @@ struct AboutView: View {
         }
         .padding(.top, 40)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .environment(\.layoutDirection, .rightToLeft)
+        .environment(\.layoutDirection, app.prefs.language.layoutDirection)
+        .environment(\.locale, app.prefs.language.locale)
     }
 }

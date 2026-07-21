@@ -6,7 +6,7 @@ struct DhikrApp: App {
     private let appModel = AppModel.shared
 
     var body: some Scene {
-        MenuBarExtra("ذِكر", systemImage: "moon.stars") {
+        MenuBarExtra(appModel.prefs.language.tr(.appName), systemImage: "moon.stars") {
             MenuBarMenu()
                 .environment(appModel)
         }

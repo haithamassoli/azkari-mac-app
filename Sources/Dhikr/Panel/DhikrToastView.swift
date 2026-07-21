@@ -10,6 +10,7 @@ final class ToastModel {
     let showTransliteration: Bool
     let showTranslation: Bool
     let counterEnabled: Bool
+    let language: AppLanguage
 
     var count: Int = 0
     var isComplete: Bool = false
@@ -26,6 +27,7 @@ final class ToastModel {
         self.showTransliteration = prefs.showTransliteration
         self.showTranslation = prefs.showTranslation
         self.counterEnabled = prefs.counterEnabled
+        self.language = prefs.language
     }
 
     var target: Int { max(1, dhikr.repeatCount) }
@@ -87,7 +89,8 @@ struct DhikrToastView: View {
         .contentShape(Rectangle())
         .onTapGesture { model.tap() }
         .onHover { model.onHover($0) }
-        .environment(\.layoutDirection, .rightToLeft)
+        .environment(\.layoutDirection, model.language.layoutDirection)
+        .environment(\.locale, model.language.locale)
     }
 
     // Source on the (RTL) leading/right edge; close button on the left.
@@ -106,14 +109,14 @@ struct DhikrToastView: View {
                     .foregroundStyle(.secondary)
             }
             .buttonStyle(.plain)
-            .help("إغلاق")
+            .help(model.language.tr(.close))
         }
     }
 
     @ViewBuilder private var counter: some View {
         VStack(spacing: 6) {
             if model.isComplete {
-                Label("تمّ بحمد الله", systemImage: "checkmark.circle.fill")
+                Label(model.language.tr(.counterDone), systemImage: "checkmark.circle.fill")
                     .font(.headline)
                     .foregroundStyle(.green)
             } else {
@@ -121,7 +124,7 @@ struct DhikrToastView: View {
                     .font(.title3.monospacedDigit().weight(.semibold))
                 ProgressView(value: Double(model.count), total: Double(model.target))
                     .frame(width: 180)
-                Text("اضغط للعدّ")
+                Text(model.language.tr(.tapToCount))
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }

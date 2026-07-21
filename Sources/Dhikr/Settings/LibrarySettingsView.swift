@@ -21,7 +21,7 @@ struct LibrarySettingsView: View {
                 ForEach(DhikrCategory.allCases) { category in
                     let items = app.store.adhkar.filter { $0.category == category }
                     if !items.isEmpty {
-                        Section(category.arabicName) {
+                        Section(category.localizedName(app.prefs.language)) {
                             ForEach(items) { dhikr in
                                 row(dhikr)
                             }
@@ -36,10 +36,10 @@ struct LibrarySettingsView: View {
                 Button {
                     editorRequest = EditorRequest(seed: nil, isNew: true)
                 } label: {
-                    Label("إضافة ذِكر", systemImage: "plus")
+                    Label(app.prefs.language.tr(.addDhikr), systemImage: "plus")
                 }
                 Spacer()
-                Button("إعادة التعيين…", role: .destructive) {
+                Button(app.prefs.language.tr(.resetEllipsis), role: .destructive) {
                     confirmReset = true
                 }
             }
@@ -49,18 +49,19 @@ struct LibrarySettingsView: View {
             DhikrEditorView(seed: request.seed, isNew: request.isNew)
                 .environment(app)
         }
-        .confirmationDialog("إعادة تعيين الأذكار", isPresented: $confirmReset, titleVisibility: .visible) {
-            Button("إعادة الأذكار الأصلية فقط", role: .destructive) {
+        .confirmationDialog(app.prefs.language.tr(.resetTitle), isPresented: $confirmReset, titleVisibility: .visible) {
+            Button(app.prefs.language.tr(.resetBuiltInsOnly), role: .destructive) {
                 app.store.resetBuiltIns()
             }
-            Button("إعادة كل شيء (يحذف أذكاري)", role: .destructive) {
+            Button(app.prefs.language.tr(.resetEverything), role: .destructive) {
                 app.store.resetEverything()
             }
-            Button("إلغاء", role: .cancel) {}
+            Button(app.prefs.language.tr(.cancel), role: .cancel) {}
         } message: {
-            Text("يمكنك إعادة الأذكار الأصلية فقط، أو إعادة كل شيء وحذف أذكارك المضافة.")
+            Text(app.prefs.language.tr(.resetMessage))
         }
-        .environment(\.layoutDirection, .rightToLeft)
+        .environment(\.layoutDirection, app.prefs.language.layoutDirection)
+        .environment(\.locale, app.prefs.language.locale)
     }
 
     @ViewBuilder
@@ -80,7 +81,7 @@ struct LibrarySettingsView: View {
                     .lineLimit(1)
                 HStack(spacing: 6) {
                     if dhikr.isBuiltIn {
-                        Text("أصلي").font(.caption2).foregroundStyle(.secondary)
+                        Text(app.prefs.language.tr(.builtInBadge)).font(.caption2).foregroundStyle(.secondary)
                     }
                     if dhikr.repeatCount > 1 {
                         Text("×\(dhikr.repeatCount)").font(.caption2).foregroundStyle(.secondary)
@@ -97,7 +98,7 @@ struct LibrarySettingsView: View {
                     Image(systemName: "doc.on.doc")
                 }
                 .buttonStyle(.borderless)
-                .help("نسخ للتعديل")
+                .help(app.prefs.language.tr(.duplicateToEdit))
             } else {
                 Button {
                     editorRequest = EditorRequest(seed: dhikr, isNew: false)
@@ -105,7 +106,7 @@ struct LibrarySettingsView: View {
                     Image(systemName: "pencil")
                 }
                 .buttonStyle(.borderless)
-                .help("تعديل")
+                .help(app.prefs.language.tr(.edit))
 
                 Button {
                     app.store.delete(dhikr)
@@ -113,7 +114,7 @@ struct LibrarySettingsView: View {
                     Image(systemName: "trash")
                 }
                 .buttonStyle(.borderless)
-                .help("حذف")
+                .help(app.prefs.language.tr(.delete))
             }
         }
         .padding(.vertical, 2)

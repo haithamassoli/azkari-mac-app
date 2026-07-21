@@ -19,6 +19,7 @@
 		610F241EBB2E77988B43D2F2 /* DhikrSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB755592A35276FA23526866 /* DhikrSelector.swift */; };
 		74D7BC3D7C0D8EEDC1B77F52 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D170784D4D68CDE160F67 /* AboutView.swift */; };
 		75CF060BDD098BD3A08961C0 /* MenuBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88F9D4308681F1D9EDF37A /* MenuBarMenu.swift */; };
+		8326383D5D87282E9393ABF4 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFEDCE645F47ECE835C0460 /* Localization.swift */; };
 		9BAE38BCC5A9934284D5CCDD /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FEF7E4D25F6D48F1BA5014 /* AppearanceSettingsView.swift */; };
 		A77830B2FFE2A43424A0FABA /* adhkar.json in Resources */ = {isa = PBXBuildFile; fileRef = 233241E238A9ACC6778DF49D /* adhkar.json */; };
 		BFB409D6770203846F9885D8 /* Dhikr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778BBFFC79ACFA538501034 /* Dhikr.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		0DAD701A8985771043D6788D /* DhikrEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrEditorView.swift; sourceTree = "<group>"; };
 		1AC50DE90E324F1AC4528720 /* DhikrToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrToastView.swift; sourceTree = "<group>"; };
+		1CFEDCE645F47ECE835C0460 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		233241E238A9ACC6778DF49D /* adhkar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adhkar.json; sourceTree = "<group>"; };
 		2778BBFFC79ACFA538501034 /* Dhikr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhikr.swift; sourceTree = "<group>"; };
 		38CDC3119397F7DC28243A53 /* DhikrPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrPanelController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		410ABB9704CB70C7B18FEE1F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1CFEDCE645F47ECE835C0460 /* Localization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		47CFE013AB39391826506241 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE400B07E02E07BC61D95FA /* App */,
+				410ABB9704CB70C7B18FEE1F /* Localization */,
 				050031C04F1789E1F736383D /* MenuBar */,
 				C1AFA5045583E996C3D1091E /* Model */,
 				B325241E98B4AEBCD40E34A7 /* Panel */,
@@ -276,6 +287,7 @@
 				F272B3B8AF249A1C47F4B709 /* Enums.swift in Sources */,
 				CAD91ACC9E27D9AEB7584040 /* GeneralSettingsView.swift in Sources */,
 				313AF81F5E9F5FC5A46AD376 /* LibrarySettingsView.swift in Sources */,
+				8326383D5D87282E9393ABF4 /* Localization.swift in Sources */,
 				C0C8F57FF9E648BF5E6DFFE2 /* LoginItem.swift in Sources */,
 				75CF060BDD098BD3A08961C0 /* MenuBarMenu.swift in Sources */,
 				2892BB77114BF16393C3D039 /* Preferences.swift in Sources */,

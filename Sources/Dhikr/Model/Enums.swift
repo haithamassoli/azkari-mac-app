@@ -12,15 +12,15 @@ enum DhikrCategory: String, Codable, CaseIterable, Identifiable, Sendable {
 
     var id: String { rawValue }
 
-    /// Arabic display name for the category.
-    var arabicName: String {
+    func localizedName(_ lang: AppLanguage) -> String {
+        let ar = lang == .arabic
         switch self {
-        case .general:     return "أذكار عامة"
-        case .morning:     return "أذكار الصباح"
-        case .evening:     return "أذكار المساء"
-        case .afterPrayer: return "أذكار بعد الصلاة"
-        case .sleep:       return "أذكار النوم"
-        case .custom:      return "أذكاري"
+        case .general:     return ar ? "أذكار عامة" : "General"
+        case .morning:     return ar ? "أذكار الصباح" : "Morning"
+        case .evening:     return ar ? "أذكار المساء" : "Evening"
+        case .afterPrayer: return ar ? "أذكار بعد الصلاة" : "After prayer"
+        case .sleep:       return ar ? "أذكار النوم" : "Before sleep"
+        case .custom:      return ar ? "أذكاري" : "My adhkar"
         }
     }
 }
@@ -35,12 +35,13 @@ enum ScreenCorner: String, CaseIterable, Identifiable, Sendable {
 
     var id: String { rawValue }
 
-    var arabicName: String {
+    func localizedName(_ lang: AppLanguage) -> String {
+        let ar = lang == .arabic
         switch self {
-        case .topRight:    return "أعلى اليمين"
-        case .topLeft:     return "أعلى اليسار"
-        case .bottomRight: return "أسفل اليمين"
-        case .bottomLeft:  return "أسفل اليسار"
+        case .topRight:    return ar ? "أعلى اليمين" : "Top right"
+        case .topLeft:     return ar ? "أعلى اليسار" : "Top left"
+        case .bottomRight: return ar ? "أسفل اليمين" : "Bottom right"
+        case .bottomLeft:  return ar ? "أسفل اليسار" : "Bottom left"
         }
     }
 }
@@ -53,11 +54,12 @@ enum SelectionMode: String, CaseIterable, Identifiable, Sendable {
 
     var id: String { rawValue }
 
-    var arabicName: String {
+    func localizedName(_ lang: AppLanguage) -> String {
+        let ar = lang == .arabic
         switch self {
-        case .shuffledBag: return "عشوائي متوازن"
-        case .sequential:  return "بالترتيب"
-        case .random:      return "عشوائي"
+        case .shuffledBag: return ar ? "عشوائي متوازن" : "Shuffled (balanced)"
+        case .sequential:  return ar ? "بالترتيب" : "In order"
+        case .random:      return ar ? "عشوائي" : "Random"
         }
     }
 }
@@ -69,10 +71,11 @@ enum ScreenMode: String, CaseIterable, Identifiable, Sendable {
 
     var id: String { rawValue }
 
-    var arabicName: String {
+    func localizedName(_ lang: AppLanguage) -> String {
+        let ar = lang == .arabic
         switch self {
-        case .withCursor: return "الشاشة التي بها المؤشّر"
-        case .main:       return "الشاشة الرئيسية"
+        case .withCursor: return ar ? "الشاشة التي بها المؤشّر" : "Screen with the cursor"
+        case .main:       return ar ? "الشاشة الرئيسية" : "Main screen"
         }
     }
 }

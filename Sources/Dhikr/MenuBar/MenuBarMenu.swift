@@ -6,28 +6,28 @@ struct MenuBarMenu: View {
     @Environment(AppModel.self) private var app
 
     var body: some View {
-        Button("أظهر ذِكرًا الآن") {
+        Button(app.prefs.language.tr(.menuShowNow)) {
             app.showNextDhikr(manual: true)
         }
         .disabled(app.enabledAdhkar.isEmpty)
 
         if app.enabledAdhkar.isEmpty {
-            Text("لا توجد أذكار مُفعَّلة")
+            Text(app.prefs.language.tr(.menuNoneEnabled))
         }
 
         Divider()
 
-        Button(app.isPaused ? "استئناف التذكير" : "إيقاف التذكير مؤقتًا") {
+        Button(app.isPaused ? app.prefs.language.tr(.resumeReminders) : app.prefs.language.tr(.pauseReminders)) {
             app.togglePause()
         }
 
         SettingsLink {
-            Text("الإعدادات…")
+            Text(app.prefs.language.tr(.menuSettings))
         }
 
         Divider()
 
-        Button("إنهاء ذكر") {
+        Button(app.prefs.language.tr(.menuQuit)) {
             NSApplication.shared.terminate(nil)
         }
         .keyboardShortcut("q")
